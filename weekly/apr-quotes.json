@@ -1,0 +1,152 @@
+[
+    {
+        "author": "Aristotele",
+        "quote": "La felicità dipende da noi stessi.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Oscar Wilde",
+        "quote": "Perdona sempre i tuoi nemici. Nulla li infastidisce di più.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Jimi Hendrix",
+        "quote": "La conoscenza parla, ma la saggezza ascolta.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Pablo Picasso",
+        "quote": "Tutto ciò che puoi immaginare è reale.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Charlie Chaplin",
+        "quote": "Un giorno senza sorriso è un giorno perso.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Buddha",
+        "quote": "La pace viene da dentro. Non cercarla fuori.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Peter Pan",
+        "quote": "Non smettere mai di sognare, solo chi sogna impara a volare.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Rudyard Kipling",
+        "quote": "Le parole sono la più potente droga usata dall'umanità.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Mahatma Gandhi",
+        "quote": "La libertà non è nulla se non include la libertà di sbagliare.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Teofrasto",
+        "quote": "Il tempo è la cosa più preziosa che un uomo possa spendere.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Oscar Wilde",
+        "quote": "La vita è troppo breve per sprecarla a realizzare i sogni degli altri.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Louis Pasteur",
+        "quote": "La fortuna favorisce la mente preparata.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Confucio",
+        "quote": "Non esiste la strada verso la felicità. La felicità è la strada.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Mark Twain",
+        "quote": "Il segreto per andare avanti è iniziare.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Thomas Edison",
+        "quote": "Il genio è 1% ispirazione e 99% traspirazione.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "George Orwell",
+        "quote": "La vera libertà è poter dire alla gente ciò che non vogliono sentire.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Edgar Allan Poe",
+        "quote": "Coloro che sognano di giorno sanno molte cose che sfuggono a chi sogna solo di notte.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Proverbio giapponese",
+        "quote": "Cadi sette volte, rialzati otto.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Oscar Wilde",
+        "quote": "Sii te stesso, tutto il resto è già stato preso.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "La creatività è contagiosa, trasmettila.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Epitteto",
+        "quote": "Non è ricco colui che possiede molto, ma colui che meno ha bisogno.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Gérard de Nerval",
+        "quote": "Ogni fiore è un'anima che sboccia nella natura.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Voltaire",
+        "quote": "Ogni uomo è colpevole di tutto il bene che non ha fatto.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "Non possiamo risolvere i problemi usando lo stesso tipo di pensiero che abbiamo usato per crearli.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Martin Luther King Jr.",
+        "quote": "Le nostre vite cominciano a finire il giorno in cui restiamo in silenzio di fronte alle cose che contano.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Giacomo Leopardi",
+        "quote": "Chi sa ridere è padrone del mondo.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Friedrich Nietzsche",
+        "quote": "Tutto ciò che viene fatto in amore è fatto al di là del bene e del male.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Proverbio afghano",
+        "quote": "Le montagne non si incontrano mai, ma gli uomini sì.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Norman Vaughan",
+        "quote": "Sogna in grande e osa fallire.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Winston Churchill",
+        "quote": "Il successo non è definitivo, il fallimento non è fatale: ciò che conta è il coraggio di continuare.",
+        "sentiment": "Inspirational"
+    }
+]

@@ -1,0 +1,157 @@
+[
+    {
+        "author": "Zig Ziglar",
+        "quote": "Non esiste un ascensore per il successo. Devi prendere le scale.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Per ottenere qualcosa che non hai mai avuto, devi fare qualcosa che non hai mai fatto.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Ralph Marston",
+        "quote": "Ciò che fai oggi può migliorare tutti i tuoi domani.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Arthur Schopenhauer",
+        "quote": "Il destino mescola le carte, ma siamo noi a giocarle.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Robert Browning",
+        "quote": "Il meglio deve ancora venire.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Confucio",
+        "quote": "Non conta quanto vai piano, l'importante è non fermarsi.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Lev Tolstoj",
+        "quote": "Tutti pensano a cambiare il mondo, ma nessuno pensa a cambiare sé stesso.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "T.S. Eliot",
+        "quote": "Solo chi rischia di andare troppo lontano avrà la possibilità di scoprire quanto lontano può andare.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Proverbio cinese",
+        "quote": "Il miglior momento per piantare un albero era vent'anni fa. Il secondo miglior momento è adesso.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "Chi non ha mai commesso un errore non ha mai provato nulla di nuovo.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Cristoforo Colombo",
+        "quote": "Non puoi attraversare l'oceano se non hai il coraggio di perdere di vista la riva.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "La felicità non dipende da ciò che ti manca, ma da come usi ciò che hai.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "La follia sta nel fare sempre la stessa cosa aspettandosi risultati diversi.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Elbert Hubbard",
+        "quote": "Il più grande errore che puoi fare nella vita è quello di avere sempre paura di farne uno.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Tutto ciò che puoi fare è tutto ciò che puoi fare.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "Il vero amore comincia dove non ci si aspetta nulla in cambio.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Friedrich Nietzsche",
+        "quote": "Senza musica la vita sarebbe un errore.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Swami Vivekananda",
+        "quote": "Ogni uomo è il creatore del proprio destino.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Jiddu Krishnamurti",
+        "quote": "Il silenzio è il grande maestro e insegna ciò che le parole non possono insegnare.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "La mente è come un paracadute: funziona solo se si apre.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "John Lennon",
+        "quote": "La vita è ciò che accade mentre fai altri progetti.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Anna Frank",
+        "quote": "Nessuno è mai diventato povero donando.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Oscar Wilde",
+        "quote": "Ogni uomo mente, ma dategli una maschera e sarà sincero.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "Solo i deboli si vendicano, i forti perdonano.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Donald Trump",
+        "quote": "Senza passione, non hai energia. Senza energia, non hai niente.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Lao Tzu",
+        "quote": "Ogni grande viaggio comincia con un piccolo passo.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Madre Teresa di Calcutta",
+        "quote": "La vita è un sogno, rendilo realtà.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Galileo Galilei",
+        "quote": "La verità è figlia del tempo, non dell'autorità.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Aristotele",
+        "quote": "Nessuna grande mente è mai esistita senza un tocco di follia.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Bruce Lee",
+        "quote": "Se ami la vita, non perdere tempo, perché il tempo è la vita.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Buddha",
+        "quote": "Non c'è niente di più nobile o di più ammirevole che conquistare sé stessi.",
+        "sentiment": "Inspirational"
+    }
+]

@@ -1,0 +1,157 @@
+[
+    {
+        "author": "Jimmy Dean",
+        "quote": "Non puoi cambiare la direzione del vento, ma puoi aggiustare le vele per raggiungere la tua destinazione.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Akio Morita",
+        "quote": "La curiosità è la chiave della creatività.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "La serenità si raggiunge non quando smetti di avere problemi, ma quando impari a conviverci.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Theodore Roosevelt",
+        "quote": "Fai ciò che puoi, con ciò che hai, dove sei.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Madre Teresa",
+        "quote": "Un cuore felice è il risultato inevitabile di un cuore ardente d'amore.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Dr. Seuss",
+        "quote": "Non piangere perché è finita, sorridi perché è accaduto.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Helen Keller",
+        "quote": "La vita è un'avventura audace o nulla.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Tupac Shakur",
+        "quote": "La realtà è sbagliata, i sogni sono reali.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Maria Robinson",
+        "quote": "Nessuno può tornare indietro e ricominciare da capo, ma chiunque può andare avanti e creare un nuovo finale.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Jack London",
+        "quote": "Non puoi aspettare che l'ispirazione ti colpisca. Devi inseguirla con una mazza.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Helen Keller",
+        "quote": "Le cose migliori e più belle del mondo non possono essere viste o toccate, ma solo sentite nel cuore.",
+        "sentiment": "Love"
+    },
+    {
+        "quote": "L'anima si nutre di ciò che la rallegra.",
+        "author": "Sant'Agostino",
+        "sentiment": "Happiness"
+    },
+    {
+        "quote": "La vita è davvero semplice, ma insistiamo nel renderla complicata.",
+        "author": "Confucio",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "quote": "L'arte di essere saggi è l'arte di capire a cosa si può sorvolare.",
+        "author": "William James",
+        "sentiment": "Funny"
+    },
+    {
+        "quote": "Non c'è amore più sincero di quello per il cibo.",
+        "author": "George Bernard Shaw",
+        "sentiment": "Funny"
+    },
+    {
+        "quote": "La felicità non si trova, si crea.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    },
+    {
+        "quote": "Una stanza senza libri è come un corpo senz'anima.",
+        "author": "Cicerone",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Il silenzio è una fonte di grande forza.",
+        "author": "Lao Tzu",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "quote": "Ogni giorno porta con sé una nuova opportunità.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Il miglior modo per prevedere il futuro è crearlo.",
+        "author": "Abraham Lincoln",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Se hai un sogno, devi proteggerlo.",
+        "author": "Will Smith",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Senza la musica la vita sarebbe un errore.",
+        "author": "Friedrich Nietzsche",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "quote": "L'unico modo per fare un ottimo lavoro è amare quello che fai.",
+        "author": "Steve Jobs",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "La vita è come andare in bicicletta: per mantenere l'equilibrio devi muoverti.",
+        "author": "Albert Einstein",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Il riso è il sole che scaccia l'inverno dal volto umano.",
+        "author": "Victor Hugo",
+        "sentiment": "Funny"
+    },
+    {
+        "quote": "La vera saggezza sta nel riconoscere la propria ignoranza.",
+        "author": "Socrate",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "quote": "Chi ama non conosce fatica.",
+        "author": "Cicerone",
+        "sentiment": "Love"
+    },
+    {
+        "quote": "Sogna come se dovessi vivere per sempre, vivi come se dovessi morire oggi.",
+        "author": "James Dean",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Il tempo che ti piace sprecare non è tempo sprecato.",
+        "author": "John Lennon",
+        "sentiment": "Happiness"
+    },
+    {
+        "quote": "Chi ha pazienza otterrà ciò che desidera.",
+        "author": "Benjamin Franklin",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Un amico è qualcuno che sa tutto di te e ti ama comunque.",
+        "author": "Elbert Hubbard",
+        "sentiment": "Love"
+    }
+]

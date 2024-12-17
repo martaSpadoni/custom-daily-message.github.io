@@ -1,0 +1,157 @@
+[
+    {
+        "author": "Il Mago di Oz",
+        "quote": "Non c'è nessun posto come casa.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Nicolas Chamfort",
+        "quote": "Un giorno senza risata è un giorno perso.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Mark Twain",
+        "quote": "Il coraggio è resistere alla paura, dominare la paura, non l'assenza di paura.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "La vita è un'opera d'arte. Non ha bisogno di essere capita, ma ammirata.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Proverbio italiano",
+        "quote": "Chi semina amore raccoglie felicità.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Margaret Lee Runbeck",
+        "quote": "La felicità non è una stazione a cui arrivare, ma un modo di viaggiare.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "C.S. Lewis",
+        "quote": "Le difficoltà preparano spesso le persone normali a un destino straordinario.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Brian Tracy",
+        "quote": "La tua vita diventa migliore solo quando tu diventi migliore.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "L'educazione è ciò che rimane dopo che uno ha dimenticato tutto ciò che ha imparato a scuola.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Jean-Jacques Rousseau",
+        "quote": "L'uomo è nato libero, ma ovunque è in catene.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Oscar Wilde",
+        "quote": "Amare se stessi è l'inizio di un idillio che dura tutta la vita.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Muhammad Ali",
+        "quote": "Non contare le ore, rendi le ore contare.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "David Hume",
+        "quote": "La bellezza delle cose esiste nella mente di chi le contempla.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Henri Matisse",
+        "quote": "Ci sono sempre fiori per coloro che vogliono vederli.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Fai oggi quello che gli altri non vogliono, fai domani quello che gli altri non possono.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "La logica ti porta da A a B. L'immaginazione ti porta ovunque.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Napoleon Hill",
+        "quote": "Se non puoi fare grandi cose, fai piccole cose in modo straordinario.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Anthony J. D'Angelo",
+        "quote": "Il sorriso è la chiave che apre molti cuori.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Proverbio italiano",
+        "quote": "Chi trova un amico trova un tesoro.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "L'amore non è guardarsi l'un l'altro, ma guardare insieme nella stessa direzione.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Marilyn Monroe",
+        "quote": "Non fermarti quando sei stanco, fermati quando hai finito.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Il momento migliore per iniziare è adesso.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Friedrich Schiller",
+        "quote": "Chi non osa nulla, non ottiene nulla.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "David Lynch",
+        "quote": "Le idee sono come i pesci. Devi restare in silenzio per prenderli.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Neale Donald Walsch",
+        "quote": "La vita comincia dove finisce la tua zona di comfort.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Hermann Hesse",
+        "quote": "Anche un orologio fermo segna l'ora giusta due volte al giorno.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Eraclito",
+        "quote": "Non c'è niente di permanente tranne il cambiamento.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "James A. Garfield",
+        "quote": "La verità ti renderà libero, ma prima ti renderà infelice.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Hugh Hefner",
+        "quote": "La vita è troppo breve per vivere i sogni di qualcun altro.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Abraham Lincoln",
+        "quote": "Non sono gli anni nella tua vita che contano, ma la vita nei tuoi anni.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Ludwig Feuerbach",
+        "quote": "L'uomo è ciò che mangia.",
+        "sentiment": "Funny"
+    }
+]

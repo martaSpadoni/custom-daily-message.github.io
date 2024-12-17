@@ -1,0 +1,157 @@
+[
+    {
+        "author": "Dante Alighieri",
+        "quote": "Fatti non foste a viver come bruti, ma per seguir virtute e canoscenza.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "La misura dell'intelligenza è data dalla capacità di cambiare quando è necessario.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "Non si vede bene che col cuore. L’essenziale è invisibile agli occhi.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "John Lennon",
+        "quote": "La vita è quello che succede mentre sei impegnato a fare altri progetti.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Walt Disney",
+        "quote": "La risata è senza tempo, l'immaginazione non ha età e i sogni sono per sempre.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Dalai Lama",
+        "quote": "La felicità non è qualcosa di già pronto. Viene dalle tue azioni.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Charlie Chaplin",
+        "quote": "Una giornata senza un sorriso è una giornata persa.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Socrate",
+        "quote": "Sapere di non sapere è il primo passo verso la saggezza.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "L'immaginazione è più importante della conoscenza.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Mahatma Gandhi",
+        "quote": "Vivi come se dovessi morire domani. Impara come se dovessi vivere per sempre.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Ernest Hemingway",
+        "quote": "Il mondo è un bel posto e vale la pena lottare per esso.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Gesù Cristo",
+        "quote": "Chi cerca trova, e a chi bussa sarà aperto.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Charles Darwin",
+        "quote": "Non è la specie più forte che sopravvive, ma quella che si adatta meglio al cambiamento.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Ogni giorno è una nuova opportunità per cambiare la tua vita.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "Cerca di non diventare un uomo di successo, ma piuttosto un uomo di valore.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Helen Keller",
+        "quote": "La vita è un'avventura audace o niente.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Seneca",
+        "quote": "Non esiste vento favorevole per il marinaio che non sa dove andare.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Nella vita non contano i passi che fai, né le scarpe che usi, ma le impronte che lasci.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Il sorriso è il modo migliore per affrontare ogni problema, per schiacciare ogni paura e nascondere ogni dolore.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "La vita è breve. Sorridi finché hai i denti.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Dr. Seuss",
+        "quote": "Non piangere perché è finita, sorridi perché è successo.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Napoleone Bonaparte",
+        "quote": "Non aspettare. Il momento perfetto non arriverà mai.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Protagora",
+        "quote": "L'uomo è misura di tutte le cose.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Eraclito",
+        "quote": "Tutto scorre e nulla rimane immutato.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "George Bernard Shaw",
+        "quote": "La vita non è trovare se stessi. La vita è creare se stessi.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Socrate",
+        "quote": "La vera saggezza sta in colui che sa di non sapere.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Steve Jobs",
+        "quote": "Abbi il coraggio di seguire il tuo cuore e la tua intuizione.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "William Shakespeare",
+        "quote": "Nella follia c'è una certa piacevolezza, che solo il folle conosce.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Henri Matisse",
+        "quote": "La creatività richiede coraggio.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "George Eliot",
+        "quote": "Non è mai troppo tardi per essere ciò che avresti potuto essere.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Friedrich Nietzsche",
+        "quote": "Ciò che non ti uccide ti rende più forte.",
+        "sentiment": "Inspirational"
+    }
+]

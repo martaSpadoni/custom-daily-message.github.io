@@ -1,0 +1,142 @@
+[
+    {
+        "author": "Eleanor Roosevelt",
+        "quote": "Il futuro appartiene a coloro che credono nella bellezza dei propri sogni.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Christopher McCandless",
+        "quote": "La felicità è reale solo se condivisa.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "William Shakespeare",
+        "quote": "Ama tutti, fidati di pochi e non fare torto a nessuno.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Lev Tolstoj",
+        "quote": "Se vuoi essere felice, sii felice.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Nelson Mandela",
+        "quote": "L'educazione è l'arma più potente per cambiare il mondo.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Bernard Williams",
+        "quote": "Non c'è mai stata una notte o un problema che potesse sconfiggere l'alba o la speranza.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Robert Collier",
+        "quote": "Il successo è la somma di piccoli sforzi ripetuti giorno dopo giorno.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Socrate",
+        "quote": "La vera saggezza è sapere di non sapere nulla.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Victor Hugo",
+        "quote": "La risata è il sole che scaccia l'inverno dal volto umano.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Osho",
+        "quote": "La vita è un mistero da vivere, non un problema da risolvere.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Friedrich Schiller",
+        "quote": "Chi non osa nulla, non speri in nulla.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Jean-Jacques Rousseau",
+        "quote": "La pazienza è amara, ma il suo frutto è dolce.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Seneca",
+        "quote": "La vera felicità consiste nell'avere una buona coscienza.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Oscar Wilde",
+        "quote": "La vita è troppo importante per essere presa sul serio.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Arthur C. Clarke",
+        "quote": "L'unico modo per scoprire i limiti del possibile è andare oltre, nell'impossibile.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Dalai Lama",
+        "quote": "La felicità non è qualcosa di pronto. Proviene dalle tue azioni.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Oscar Wilde",
+        "quote": "Amare se stessi è l'inizio di una storia d'amore che dura tutta la vita.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Martin Luther King Jr.",
+        "quote": "Se non puoi volare, corri. Se non puoi correre, cammina. Se non puoi camminare, striscia. Ma qualunque cosa tu faccia, devi andare avanti.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Buddha",
+        "quote": "La mente è tutto. Ciò che pensi, diventi.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "William Shakespeare",
+        "quote": "L'amore non guarda con gli occhi ma con l'anima.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Confucio",
+        "quote": "Non importa quanto vai piano, l'importante è non fermarsi.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Charlie Chaplin",
+        "quote": "Una giornata senza sorriso è una giornata persa.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Fryderyk Chopin",
+        "quote": "Chi non ride mai non è una persona seria.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Carlo Goldoni",
+        "quote": "Il mondo è un bel libro, ma poco serve a chi non lo sa leggere.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "J.K. Rowling",
+        "quote": "Non abbiamo bisogno della magia per trasformare il mondo; portiamo già tutto il potere di cui abbiamo bisogno dentro di noi.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Thomas Jefferson",
+        "quote": "Se vuoi qualcosa che non hai mai avuto, devi fare qualcosa che non hai mai fatto.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Thomas Hardy",
+        "quote": "La felicità non dipende da ciò che ci manca, ma dal buon uso di ciò che abbiamo.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Cartesio",
+        "quote": "Cogito ergo sum.",
+        "sentiment": "Inspirational"
+    }
+]

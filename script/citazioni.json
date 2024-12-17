@@ -1,0 +1,1691 @@
+[{
+        "author": "Friedrich Nietzsche",
+        "quote": "Chi ha un perché per vivere può sopportare quasi ogni come.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Leonardo da Vinci",
+        "quote": "La semplicità è la massima raffinatezza.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "Non si vede bene che col cuore. L'essenziale è invisibile agli occhi.",
+        "sentiment": "Love"
+    }, {
+        "author": "Dalai Lama",
+        "quote": "La felicità non è qualcosa di fatto. Viene dalle tue azioni.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Peter Pan",
+        "quote": "Non smettere mai di sognare, solo chi sogna può volare.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Steve Jobs",
+        "quote": "L'unico modo per fare un ottimo lavoro è amare ciò che fai.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Lao Tzu",
+        "quote": "Il viaggio più lungo inizia con un singolo passo.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "Amare non è guardarsi l'un l'altro, ma guardare insieme nella stessa direzione.",
+        "sentiment": "Love"
+    }, {
+        "author": "Mahatma Gandhi",
+        "quote": "Sii il cambiamento che vuoi vedere nel mondo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "John Lennon",
+        "quote": "La vita è ciò che accade mentre siamo impegnati a fare altri progetti.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Fëdor Dostoevskij",
+        "quote": "La bellezza salverà il mondo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Eleanor Roosevelt",
+        "quote": "Nessuno può farti sentire inferiore senza il tuo consenso.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Sant'Agostino",
+        "quote": "Ama e fa ciò che vuoi.",
+        "sentiment": "Love"
+    }, {
+        "author": "Christopher McCandless",
+        "quote": "La felicità è reale solo quando condivisa.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Napoleon Hill",
+        "quote": "L'unico limite è quello che poni tu stesso.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "La vita è come andare in bicicletta: per mantenere l'equilibrio devi continuare a muoverti.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Emanuel Swedenborg",
+        "quote": "Amare significa agire per la felicità dell'altro.",
+        "sentiment": "Love"
+    }, {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "Fai della tua vita un sogno, e di un sogno, una realtà.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Victor Hugo",
+        "quote": "Il sorriso è il sole che scaccia l'inverno dal volto umano.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Walt Whitman",
+        "quote": "Ogni giorno porta con sé un miracolo.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Mahatma Gandhi",
+        "quote": "Dove c'è amore, c'è vita.",
+        "sentiment": "Love"
+    }, {
+        "author": "Ralph Waldo Emerson",
+        "quote": "L'unico modo per avere un amico è esserlo.",
+        "sentiment": "Love"
+    }, {
+        "author": "Confucio",
+        "quote": "Chi conosce tutte le risposte non si è fatto tutte le domande.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Confucio",
+        "quote": "La nostra più grande gloria non è nel non cadere mai, ma nel rialzarci ogni volta che cadiamo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "C.S. Lewis",
+        "quote": "Le difficoltà spesso preparano le persone comuni a destini straordinari.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Seneca",
+        "quote": "La vera felicità è godersi il presente, senza dipendere ansiosamente dal futuro.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Henry Van Dyke",
+        "quote": "Il tempo è troppo lento per coloro che aspettano, troppo veloce per coloro che temono, ma per coloro che amano, il tempo è eterno.",
+        "sentiment": "Love"
+    }, {
+        "author": "Oscar Wilde",
+        "quote": "La felicità non è possedere tutto ciò che si desidera, ma desiderare tutto ciò che si possiede.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "George Eliot",
+        "quote": "Non è mai troppo tardi per essere ciò che avresti voluto essere.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Erich Fromm",
+        "quote": "Quando ami qualcuno, ami tutto di lui, anche i suoi difetti.",
+        "sentiment": "Love"
+    }, {
+        "author": "Napoleon Hill",
+        "quote": "Non aspettare. Non sarà mai il momento giusto.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Eleanor Roosevelt",
+        "quote": "Il futuro appartiene a coloro che credono nella bellezza dei propri sogni.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Christopher McCandless",
+        "quote": "La felicità è reale solo se condivisa.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "William Shakespeare",
+        "quote": "Ama tutti, fidati di pochi e non fare torto a nessuno.",
+        "sentiment": "Love"
+    }, {
+        "author": "Lev Tolstoj",
+        "quote": "Se vuoi essere felice, sii felice.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Nelson Mandela",
+        "quote": "L'educazione è l'arma più potente per cambiare il mondo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Bernard Williams",
+        "quote": "Non c'è mai stata una notte o un problema che potesse sconfiggere l'alba o la speranza.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Robert Collier",
+        "quote": "Il successo è la somma di piccoli sforzi ripetuti giorno dopo giorno.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Socrate",
+        "quote": "La vera saggezza è sapere di non sapere nulla.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Victor Hugo",
+        "quote": "La risata è il sole che scaccia l'inverno dal volto umano.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Osho",
+        "quote": "La vita è un mistero da vivere, non un problema da risolvere.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Friedrich Schiller",
+        "quote": "Chi non osa nulla, non speri in nulla.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Jean-Jacques Rousseau",
+        "quote": "La pazienza è amara, ma il suo frutto è dolce.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Seneca",
+        "quote": "La vera felicità consiste nell'avere una buona coscienza.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Oscar Wilde",
+        "quote": "La vita è troppo importante per essere presa sul serio.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Arthur C. Clarke",
+        "quote": "L'unico modo per scoprire i limiti del possibile è andare oltre, nell'impossibile.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Dalai Lama",
+        "quote": "La felicità non è qualcosa di pronto. Proviene dalle tue azioni.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Oscar Wilde",
+        "quote": "Amare se stessi è l'inizio di una storia d'amore che dura tutta la vita.",
+        "sentiment": "Love"
+    }, {
+        "author": "Martin Luther King Jr.",
+        "quote": "Se non puoi volare, corri. Se non puoi correre, cammina. Se non puoi camminare, striscia. Ma qualunque cosa tu faccia, devi andare avanti.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Buddha",
+        "quote": "La mente è tutto. Ciò che pensi, diventi.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Napoleon Hill",
+        "quote": "Non aspettare. Non sarà mai il momento giusto.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Eleanor Roosevelt",
+        "quote": "Il futuro appartiene a coloro che credono nella bellezza dei propri sogni.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Christopher McCandless",
+        "quote": "La felicità è reale solo se condivisa.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "William Shakespeare",
+        "quote": "Ama tutti, fidati di pochi e non fare torto a nessuno.",
+        "sentiment": "Love"
+    }, {
+        "author": "Lev Tolstoj",
+        "quote": "Se vuoi essere felice, sii felice.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Nelson Mandela",
+        "quote": "L'educazione è l'arma più potente per cambiare il mondo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Bernard Williams",
+        "quote": "Non c'è mai stata una notte o un problema che potesse sconfiggere l'alba o la speranza.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Robert Collier",
+        "quote": "Il successo è la somma di piccoli sforzi ripetuti giorno dopo giorno.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Socrate",
+        "quote": "La vera saggezza è sapere di non sapere nulla.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Victor Hugo",
+        "quote": "La risata è il sole che scaccia l'inverno dal volto umano.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Osho",
+        "quote": "La vita è un mistero da vivere, non un problema da risolvere.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Friedrich Schiller",
+        "quote": "Chi non osa nulla, non speri in nulla.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Jean-Jacques Rousseau",
+        "quote": "La pazienza è amara, ma il suo frutto è dolce.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Seneca",
+        "quote": "La vera felicità consiste nell'avere una buona coscienza.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Oscar Wilde",
+        "quote": "La vita è troppo importante per essere presa sul serio.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Arthur C. Clarke",
+        "quote": "L'unico modo per scoprire i limiti del possibile è andare oltre, nell'impossibile.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Dalai Lama",
+        "quote": "La felicità non è qualcosa di pronto. Proviene dalle tue azioni.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Oscar Wilde",
+        "quote": "Amare se stessi è l'inizio di una storia d'amore che dura tutta la vita.",
+        "sentiment": "Love"
+    }, {
+        "author": "Martin Luther King Jr.",
+        "quote": "Se non puoi volare, corri. Se non puoi correre, cammina. Se non puoi camminare, striscia. Ma qualunque cosa tu faccia, devi andare avanti.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Buddha",
+        "quote": "La mente è tutto. Ciò che pensi, diventi.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Friedrich Nietzsche",
+        "quote": "Chi ha un perché per vivere può sopportare quasi ogni come.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "William Shakespeare",
+        "quote": "L'amore non guarda con gli occhi ma con l'anima.",
+        "sentiment": "Love"
+    }, {
+        "author": "Confucio",
+        "quote": "Non importa quanto vai piano, l'importante è non fermarsi.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Charlie Chaplin",
+        "quote": "Una giornata senza sorriso è una giornata persa.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Fryderyk Chopin",
+        "quote": "Chi non ride mai non è una persona seria.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Carlo Goldoni",
+        "quote": "Il mondo è un bel libro, ma poco serve a chi non lo sa leggere.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "J.K. Rowling",
+        "quote": "Non abbiamo bisogno della magia per trasformare il mondo; portiamo già tutto il potere di cui abbiamo bisogno dentro di noi.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Thomas Jefferson",
+        "quote": "Se vuoi qualcosa che non hai mai avuto, devi fare qualcosa che non hai mai fatto.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Thomas Hardy",
+        "quote": "La felicità non dipende da ciò che ci manca, ma dal buon uso di ciò che abbiamo.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Mahatma Gandhi",
+        "quote": "Sii il cambiamento che vuoi vedere nel mondo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Cartesio",
+        "quote": "Cogito ergo sum.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Dante Alighieri",
+        "quote": "Fatti non foste a viver come bruti, ma per seguir virtute e canoscenza.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "La misura dell'intelligenza è data dalla capacità di cambiare quando è necessario.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Friedrich Nietzsche",
+        "quote": "Chi ha un perché per vivere può sopportare quasi ogni come.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "Non si vede bene che col cuore. L’essenziale è invisibile agli occhi.",
+        "sentiment": "Love"
+    }, {
+        "author": "John Lennon",
+        "quote": "La vita è quello che succede mentre sei impegnato a fare altri progetti.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Walt Disney",
+        "quote": "La risata è senza tempo, l'immaginazione non ha età e i sogni sono per sempre.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Dalai Lama",
+        "quote": "La felicità non è qualcosa di già pronto. Viene dalle tue azioni.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Thomas Jefferson",
+        "quote": "Se vuoi qualcosa che non hai mai avuto, devi fare qualcosa che non hai mai fatto.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Charlie Chaplin",
+        "quote": "Una giornata senza un sorriso è una giornata persa.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Socrate",
+        "quote": "Sapere di non sapere è il primo passo verso la saggezza.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "L'immaginazione è più importante della conoscenza.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Mahatma Gandhi",
+        "quote": "Vivi come se dovessi morire domani. Impara come se dovessi vivere per sempre.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Eleanor Roosevelt",
+        "quote": "Nessuno può farti sentire inferiore senza il tuo consenso.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Christopher McCandless",
+        "quote": "La felicità è reale solo se condivisa.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Ernest Hemingway",
+        "quote": "Il mondo è un bel posto e vale la pena lottare per esso.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Mahatma Gandhi",
+        "quote": "Sii il cambiamento che vuoi vedere nel mondo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Gesù Cristo",
+        "quote": "Chi cerca trova, e a chi bussa sarà aperto.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Charles Darwin",
+        "quote": "Non è la specie più forte che sopravvive, ma quella che si adatta meglio al cambiamento.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Anonimo",
+        "quote": "Ogni giorno è una nuova opportunità per cambiare la tua vita.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "Cerca di non diventare un uomo di successo, ma piuttosto un uomo di valore.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Helen Keller",
+        "quote": "La vita è un'avventura audace o niente.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Seneca",
+        "quote": "Non esiste vento favorevole per il marinaio che non sa dove andare.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Anonimo",
+        "quote": "Nella vita non contano i passi che fai, né le scarpe che usi, ma le impronte che lasci.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Anonimo",
+        "quote": "Il sorriso è il modo migliore per affrontare ogni problema, per schiacciare ogni paura e nascondere ogni dolore.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Anonimo",
+        "quote": "La vita è breve. Sorridi finché hai i denti.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Dr. Seuss",
+        "quote": "Non piangere perché è finita, sorridi perché è successo.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Napoleone Bonaparte",
+        "quote": "Non aspettare. Il momento perfetto non arriverà mai.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Protagora",
+        "quote": "L'uomo è misura di tutte le cose.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Eraclito",
+        "quote": "Tutto scorre e nulla rimane immutato.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "George Bernard Shaw",
+        "quote": "La vita non è trovare se stessi. La vita è creare se stessi.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Fryderyk Chopin",
+        "quote": "Chi non ride mai non è una persona seria.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Socrate",
+        "quote": "La vera saggezza sta in colui che sa di non sapere.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Steve Jobs",
+        "quote": "Abbi il coraggio di seguire il tuo cuore e la tua intuizione.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Buddha",
+        "quote": "La mente è tutto. Ciò che pensi, diventi.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "William Shakespeare",
+        "quote": "Nella follia c'è una certa piacevolezza, che solo il folle conosce.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Henri Matisse",
+        "quote": "La creatività richiede coraggio.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "George Eliot",
+        "quote": "Non è mai troppo tardi per essere ciò che avresti potuto essere.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Friedrich Nietzsche",
+        "quote": "Ciò che non ti uccide ti rende più forte.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Aristotele",
+        "quote": "La felicità dipende da noi stessi.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Oscar Wilde",
+        "quote": "Perdona sempre i tuoi nemici. Nulla li infastidisce di più.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Jimi Hendrix",
+        "quote": "La conoscenza parla, ma la saggezza ascolta.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Pablo Picasso",
+        "quote": "Tutto ciò che puoi immaginare è reale.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Charlie Chaplin",
+        "quote": "Un giorno senza sorriso è un giorno perso.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Buddha",
+        "quote": "La pace viene da dentro. Non cercarla fuori.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Robert Collier",
+        "quote": "Il successo è la somma di piccoli sforzi ripetuti giorno dopo giorno.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Peter Pan",
+        "quote": "Non smettere mai di sognare, solo chi sogna impara a volare.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Rudyard Kipling",
+        "quote": "Le parole sono la più potente droga usata dall'umanità.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Mahatma Gandhi",
+        "quote": "La libertà non è nulla se non include la libertà di sbagliare.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Teofrasto",
+        "quote": "Il tempo è la cosa più preziosa che un uomo possa spendere.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Oscar Wilde",
+        "quote": "La vita è troppo breve per sprecarla a realizzare i sogni degli altri.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Louis Pasteur",
+        "quote": "La fortuna favorisce la mente preparata.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Confucio",
+        "quote": "Non esiste la strada verso la felicità. La felicità è la strada.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Mark Twain",
+        "quote": "Il segreto per andare avanti è iniziare.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Thomas Edison",
+        "quote": "Il genio è 1% ispirazione e 99% traspirazione.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "George Orwell",
+        "quote": "La vera libertà è poter dire alla gente ciò che non vogliono sentire.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Edgar Allan Poe",
+        "quote": "Coloro che sognano di giorno sanno molte cose che sfuggono a chi sogna solo di notte.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Proverbio giapponese",
+        "quote": "Cadi sette volte, rialzati otto.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Oscar Wilde",
+        "quote": "Sii te stesso, tutto il resto è già stato preso.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "La creatività è contagiosa, trasmettila.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Epitteto",
+        "quote": "Non è ricco colui che possiede molto, ma colui che meno ha bisogno.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Gérard de Nerval",
+        "quote": "Ogni fiore è un'anima che sboccia nella natura.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Voltaire",
+        "quote": "Ogni uomo è colpevole di tutto il bene che non ha fatto.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "Non possiamo risolvere i problemi usando lo stesso tipo di pensiero che abbiamo usato per crearli.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Martin Luther King Jr.",
+        "quote": "Le nostre vite cominciano a finire il giorno in cui restiamo in silenzio di fronte alle cose che contano.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Giacomo Leopardi",
+        "quote": "Chi sa ridere è padrone del mondo.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Eleanor Roosevelt",
+        "quote": "Nessuno può farti sentire inferiore senza il tuo consenso.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Friedrich Nietzsche",
+        "quote": "Tutto ciò che viene fatto in amore è fatto al di là del bene e del male.",
+        "sentiment": "Love"
+    }, {
+        "author": "Proverbio afghano",
+        "quote": "Le montagne non si incontrano mai, ma gli uomini sì.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Norman Vaughan",
+        "quote": "Sogna in grande e osa fallire.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Winston Churchill",
+        "quote": "Il successo non è definitivo, il fallimento non è fatale: ciò che conta è il coraggio di continuare.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Zig Ziglar",
+        "quote": "Non esiste un ascensore per il successo. Devi prendere le scale.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Anonimo",
+        "quote": "Per ottenere qualcosa che non hai mai avuto, devi fare qualcosa che non hai mai fatto.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Ralph Marston",
+        "quote": "Ciò che fai oggi può migliorare tutti i tuoi domani.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Arthur Schopenhauer",
+        "quote": "Il destino mescola le carte, ma siamo noi a giocarle.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Robert Browning",
+        "quote": "Il meglio deve ancora venire.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Confucio",
+        "quote": "Non conta quanto vai piano, l'importante è non fermarsi.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Lev Tolstoj",
+        "quote": "Tutti pensano a cambiare il mondo, ma nessuno pensa a cambiare sé stesso.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "T.S. Eliot",
+        "quote": "Solo chi rischia di andare troppo lontano avrà la possibilità di scoprire quanto lontano può andare.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Proverbio cinese",
+        "quote": "Il miglior momento per piantare un albero era vent'anni fa. Il secondo miglior momento è adesso.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "Chi non ha mai commesso un errore non ha mai provato nulla di nuovo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Nelson Mandela",
+        "quote": "L'educazione è l'arma più potente per cambiare il mondo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Cristoforo Colombo",
+        "quote": "Non puoi attraversare l'oceano se non hai il coraggio di perdere di vista la riva.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Anonimo",
+        "quote": "La felicità non dipende da ciò che ti manca, ma da come usi ciò che hai.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "La follia sta nel fare sempre la stessa cosa aspettandosi risultati diversi.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Elbert Hubbard",
+        "quote": "Il più grande errore che puoi fare nella vita è quello di avere sempre paura di farne uno.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Anonimo",
+        "quote": "Tutto ciò che puoi fare è tutto ciò che puoi fare.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "Il vero amore comincia dove non ci si aspetta nulla in cambio.",
+        "sentiment": "Love"
+    }, {
+        "author": "Friedrich Nietzsche",
+        "quote": "Senza musica la vita sarebbe un errore.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Swami Vivekananda",
+        "quote": "Ogni uomo è il creatore del proprio destino.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Jiddu Krishnamurti",
+        "quote": "Il silenzio è il grande maestro e insegna ciò che le parole non possono insegnare.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Fëdor Dostoevskij",
+        "quote": "La bellezza salverà il mondo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "La mente è come un paracadute: funziona solo se si apre.",
+        "sentiment": "Funny"
+    }, {
+        "author": "John Lennon",
+        "quote": "La vita è ciò che accade mentre fai altri progetti.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Anna Frank",
+        "quote": "Nessuno è mai diventato povero donando.",
+        "sentiment": "Love"
+    }, {
+        "author": "Oscar Wilde",
+        "quote": "Ogni uomo mente, ma dategli una maschera e sarà sincero.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "Solo i deboli si vendicano, i forti perdonano.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Donald Trump",
+        "quote": "Senza passione, non hai energia. Senza energia, non hai niente.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Lao Tzu",
+        "quote": "Ogni grande viaggio comincia con un piccolo passo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Madre Teresa di Calcutta",
+        "quote": "La vita è un sogno, rendilo realtà.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Galileo Galilei",
+        "quote": "La verità è figlia del tempo, non dell'autorità.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Aristotele",
+        "quote": "Nessuna grande mente è mai esistita senza un tocco di follia.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Bruce Lee",
+        "quote": "Se ami la vita, non perdere tempo, perché il tempo è la vita.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Buddha",
+        "quote": "Non c'è niente di più nobile o di più ammirevole che conquistare sé stessi.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Leonardo da Vinci",
+        "quote": "La semplicità è la suprema sofisticazione.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Simón Bolívar",
+        "quote": "L'arte di vincere si impara nelle sconfitte.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "È meglio essere ottimisti e avere torto che pessimisti e avere ragione.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Khalil Gibran",
+        "quote": "Non si può toccare l'alba se non si sono percorsi i sentieri della notte.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Anonimo",
+        "quote": "Sii il sole che illumina le giornate degli altri.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Dalai Lama",
+        "quote": "Un piccolo pensiero positivo al mattino può cambiare la tua giornata.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Vincent Van Gogh",
+        "quote": "Chi non ha mai affrontato difficoltà non conosce la propria forza.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Robert Kiyosaki",
+        "quote": "Non esiste il fallimento, esistono solo lezioni.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Anonimo",
+        "quote": "La paura è solo una scelta, come il coraggio.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "Il vero amore inizia quando niente è cercato in cambio.",
+        "sentiment": "Love"
+    }, {
+        "author": "Elbert Hubbard",
+        "quote": "Un amico è qualcuno che sa tutto di te e ti ama lo stesso.",
+        "sentiment": "Love"
+    }, {
+        "author": "Anonimo",
+        "quote": "Chi ti ama davvero non ti abbandonerà mai, anche nei momenti più bui.",
+        "sentiment": "Love"
+    }, {
+        "author": "Proverbio cinese",
+        "quote": "Una risata può aggiungere un giorno alla tua vita.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Anatole France",
+        "quote": "L'ironia è l'ultimo stadio della saggezza.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Anonimo",
+        "quote": "La vita è breve, ma i sorrisi che lasciamo durano per sempre.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Bono Vox",
+        "quote": "La musica può cambiare il mondo perché può cambiare le persone.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Walt Disney",
+        "quote": "Se puoi sognarlo, puoi farlo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Jean de La Fontaine",
+        "quote": "La tristezza vola via sulle ali del tempo.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Anonimo",
+        "quote": "Ogni giorno è un nuovo inizio. Prendi un respiro profondo, sorridi e ricomincia.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "George R.R. Martin",
+        "quote": "La mente ha bisogno di libri come la spada ha bisogno di una mola.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Confucio",
+        "quote": "Le stelle sono buchi nel cielo da cui filtra la luce dell'infinito.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "William Shakespeare",
+        "quote": "L'amore non guarda con gli occhi ma con l'anima.",
+        "sentiment": "Love"
+    }, {
+        "author": "George Bernard Shaw",
+        "quote": "Le persone non smettono di giocare perché invecchiano, ma invecchiano perché smettono di giocare.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Anonimo",
+        "quote": "Non sono le circostanze a definire chi sei, ma le tue decisioni.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Proverbio africano",
+        "quote": "Se vuoi andare veloce, vai da solo. Se vuoi andare lontano, vai insieme.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Beverly Sills",
+        "quote": "Non ci sono scorciatoie per nessun posto dove valga la pena andare.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "T.S. Eliot",
+        "quote": "Ogni momento è un nuovo inizio.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Muhammad Ali",
+        "quote": "Non contare i giorni, fai sì che i giorni contino.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Mark Twain",
+        "quote": "La gentilezza è una lingua che i sordi possono sentire e i ciechi possono vedere.",
+        "sentiment": "Love"
+    }, {
+        "author": "Anonimo",
+        "quote": "Non si smette di ridere invecchiando, si invecchia smettendo di ridere.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Emily Dickinson",
+        "quote": "La speranza è la cosa con le piume che si posa sull'anima.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Il Mago di Oz",
+        "quote": "Non c'è nessun posto come casa.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Nicolas Chamfort",
+        "quote": "Un giorno senza risata è un giorno perso.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Mark Twain",
+        "quote": "Il coraggio è resistere alla paura, dominare la paura, non l'assenza di paura.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Anonimo",
+        "quote": "La vita è un'opera d'arte. Non ha bisogno di essere capita, ma ammirata.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Proverbio italiano",
+        "quote": "Chi semina amore raccoglie felicità.",
+        "sentiment": "Love"
+    }, {
+        "author": "Margaret Lee Runbeck",
+        "quote": "La felicità non è una stazione a cui arrivare, ma un modo di viaggiare.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Buddha",
+        "quote": "La mente è tutto. Ciò che pensi, diventi.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Seneca",
+        "quote": "Non esiste vento favorevole per il marinaio che non sa dove andare.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "C.S. Lewis",
+        "quote": "Le difficoltà preparano spesso le persone normali a un destino straordinario.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Mahatma Gandhi",
+        "quote": "Sii il cambiamento che vuoi vedere nel mondo.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Brian Tracy",
+        "quote": "La tua vita diventa migliore solo quando tu diventi migliore.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "L'educazione è ciò che rimane dopo che uno ha dimenticato tutto ciò che ha imparato a scuola.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Jean-Jacques Rousseau",
+        "quote": "L'uomo è nato libero, ma ovunque è in catene.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "George Eliot",
+        "quote": "Non è mai troppo tardi per essere ciò che avresti potuto essere.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Friedrich Nietzsche",
+        "quote": "Ciò che non ti uccide ti rende più forte.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Oscar Wilde",
+        "quote": "Amare se stessi è l'inizio di un idillio che dura tutta la vita.",
+        "sentiment": "Love"
+    }, {
+        "author": "Muhammad Ali",
+        "quote": "Non contare le ore, rendi le ore contare.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "David Hume",
+        "quote": "La bellezza delle cose esiste nella mente di chi le contempla.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Jean-Jacques Rousseau",
+        "quote": "La pazienza è amara, ma il suo frutto è dolce.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Henri Matisse",
+        "quote": "Ci sono sempre fiori per coloro che vogliono vederli.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Anonimo",
+        "quote": "Fai oggi quello che gli altri non vogliono, fai domani quello che gli altri non possono.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Albert Einstein",
+        "quote": "La logica ti porta da A a B. L'immaginazione ti porta ovunque.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Christopher McCandless",
+        "quote": "La felicità è reale solo quando condivisa.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Napoleon Hill",
+        "quote": "Se non puoi fare grandi cose, fai piccole cose in modo straordinario.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Anthony J. D'Angelo",
+        "quote": "Il sorriso è la chiave che apre molti cuori.",
+        "sentiment": "Love"
+    }, {
+        "author": "Proverbio italiano",
+        "quote": "Chi trova un amico trova un tesoro.",
+        "sentiment": "Love"
+    }, {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "L'amore non è guardarsi l'un l'altro, ma guardare insieme nella stessa direzione.",
+        "sentiment": "Love"
+    }, {
+        "author": "Marilyn Monroe",
+        "quote": "Non fermarti quando sei stanco, fermati quando hai finito.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Anonimo",
+        "quote": "Il momento migliore per iniziare è adesso.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Friedrich Schiller",
+        "quote": "Chi non osa nulla, non ottiene nulla.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "David Lynch",
+        "quote": "Le idee sono come i pesci. Devi restare in silenzio per prenderli.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Neale Donald Walsch",
+        "quote": "La vita comincia dove finisce la tua zona di comfort.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Victor Hugo",
+        "quote": "La risata è il sole che scaccia l'inverno dal volto umano.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Hermann Hesse",
+        "quote": "Anche un orologio fermo segna l'ora giusta due volte al giorno.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Eraclito",
+        "quote": "Non c'è niente di permanente tranne il cambiamento.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "James A. Garfield",
+        "quote": "La verità ti renderà libero, ma prima ti renderà infelice.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Hugh Hefner",
+        "quote": "La vita è troppo breve per vivere i sogni di qualcun altro.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Abraham Lincoln",
+        "quote": "Non sono gli anni nella tua vita che contano, ma la vita nei tuoi anni.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Ludwig Feuerbach",
+        "quote": "L'uomo è ciò che mangia.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Robert Collier",
+        "quote": "Il successo è la somma di piccoli sforzi ripetuti giorno dopo giorno.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Jimmy Dean",
+        "quote": "Non puoi cambiare la direzione del vento, ma puoi aggiustare le vele per raggiungere la tua destinazione.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Akio Morita",
+        "quote": "La curiosità è la chiave della creatività.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Anonimo",
+        "quote": "La serenità si raggiunge non quando smetti di avere problemi, ma quando impari a conviverci.",
+        "sentiment": "Mindfulness"
+    }, {
+        "author": "Theodore Roosevelt",
+        "quote": "Fai ciò che puoi, con ciò che hai, dove sei.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Madre Teresa",
+        "quote": "Un cuore felice è il risultato inevitabile di un cuore ardente d'amore.",
+        "sentiment": "Love"
+    }, {
+        "author": "Dr. Seuss",
+        "quote": "Non piangere perché è finita, sorridi perché è accaduto.",
+        "sentiment": "Happiness"
+    }, {
+        "author": "Helen Keller",
+        "quote": "La vita è un'avventura audace o nulla.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Tupac Shakur",
+        "quote": "La realtà è sbagliata, i sogni sono reali.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Maria Robinson",
+        "quote": "Nessuno può tornare indietro e ricominciare da capo, ma chiunque può andare avanti e creare un nuovo finale.",
+        "sentiment": "Inspirational"
+    }, {
+        "author": "Jack London",
+        "quote": "Non puoi aspettare che l'ispirazione ti colpisca. Devi inseguirla con una mazza.",
+        "sentiment": "Funny"
+    }, {
+        "author": "Helen Keller",
+        "quote": "Le cose migliori e più belle del mondo non possono essere viste o toccate, ma solo sentite nel cuore.",
+        "sentiment": "Love"
+    }, {
+        "quote": "L'anima si nutre di ciò che la rallegra.",
+        "author": "Sant'Agostino",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La vita è davvero semplice, ma insistiamo nel renderla complicata.",
+        "author": "Confucio",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "L'arte di essere saggi è l'arte di capire a cosa si può sorvolare.",
+        "author": "William James",
+        "sentiment": "Funny"
+    }, {
+        "quote": "Non c'è amore più sincero di quello per il cibo.",
+        "author": "George Bernard Shaw",
+        "sentiment": "Funny"
+    }, {
+        "quote": "La felicità non si trova, si crea.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Una stanza senza libri è come un corpo senz'anima.",
+        "author": "Cicerone",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il silenzio è una fonte di grande forza.",
+        "author": "Lao Tzu",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "Ogni giorno porta con sé una nuova opportunità.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Non si vede bene che col cuore. L'essenziale è invisibile agli occhi.",
+        "author": "Antoine de Saint-Exupéry",
+        "sentiment": "Love"
+    }, {
+        "quote": "L'educazione è l'arma più potente per cambiare il mondo.",
+        "author": "Nelson Mandela",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La felicità dipende da noi stessi.",
+        "author": "Aristotele",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Il miglior modo per prevedere il futuro è crearlo.",
+        "author": "Abraham Lincoln",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La musica può cambiare il mondo perché può cambiare le persone.",
+        "author": "Bono",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Se hai un sogno, devi proteggerlo.",
+        "author": "Will Smith",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Senza la musica la vita sarebbe un errore.",
+        "author": "Friedrich Nietzsche",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "L'unico modo per fare un ottimo lavoro è amare quello che fai.",
+        "author": "Steve Jobs",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Dove c'è amore, c'è vita.",
+        "author": "Mahatma Gandhi",
+        "sentiment": "Love"
+    }, {
+        "quote": "La vita è come andare in bicicletta: per mantenere l'equilibrio devi muoverti.",
+        "author": "Albert Einstein",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il riso è il sole che scaccia l'inverno dal volto umano.",
+        "author": "Victor Hugo",
+        "sentiment": "Funny"
+    }, {
+        "quote": "Un giorno senza sorriso è un giorno perso.",
+        "author": "Charlie Chaplin",
+        "sentiment": "Funny"
+    }, {
+        "quote": "La vera saggezza sta nel riconoscere la propria ignoranza.",
+        "author": "Socrate",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "Chi ama non conosce fatica.",
+        "author": "Cicerone",
+        "sentiment": "Love"
+    }, {
+        "quote": "Sogna come se dovessi vivere per sempre, vivi come se dovessi morire oggi.",
+        "author": "James Dean",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il tempo che ti piace sprecare non è tempo sprecato.",
+        "author": "John Lennon",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Chi ha pazienza otterrà ciò che desidera.",
+        "author": "Benjamin Franklin",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Un amico è qualcuno che sa tutto di te e ti ama comunque.",
+        "author": "Elbert Hubbard",
+        "sentiment": "Love"
+    }, {
+        "quote": "Impara a scrivere le tue ferite nella sabbia e a incidere le tue gioie nella pietra.",
+        "author": "Lao Tzu",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "Non ridere mai delle scelte di chiunque, nessuno sa quanto soffra il suo cuore.",
+        "author": "Anonimo",
+        "sentiment": "Love"
+    }, {
+        "quote": "L'uomo che muove una montagna comincia spostando piccole pietre.",
+        "author": "Confucio",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La perfezione non è raggiungibile, ma se inseguiamo la perfezione possiamo raggiungere l'eccellenza.",
+        "author": "Vince Lombardi",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Chi trova un amico, trova un tesoro.",
+        "author": "Proverbio italiano",
+        "sentiment": "Love"
+    }, {
+        "quote": "Il successo è cadere nove volte e rialzarsi dieci.",
+        "author": "Jon Bon Jovi",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il mondo è un bel posto e vale la pena lottare per esso.",
+        "author": "Ernest Hemingway",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "Se non puoi essere un albero, sii un cespuglio, ma sii il miglior cespuglio che puoi.",
+        "author": "Martin Luther King Jr.",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Le cose migliori accadono a chi sa aspettare.",
+        "author": "Anonimo",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "Tutti i nostri sogni possono diventare realtà se abbiamo il coraggio di inseguirli.",
+        "author": "Walt Disney",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "L'amore è l'unica cosa che cresce quando viene condivisa.",
+        "author": "Antoine de Saint-Exupéry",
+        "sentiment": "Love"
+    }, {
+        "quote": "Niente di grande è stato mai raggiunto senza entusiasmo.",
+        "author": "Ralph Waldo Emerson",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La semplicità è la massima sofisticazione.",
+        "author": "Leonardo da Vinci",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "Una vita senza amore è come un giardino senza sole.",
+        "author": "Oscar Wilde",
+        "sentiment": "Love"
+    }, {
+        "quote": "La gentilezza è il linguaggio che il sordo può sentire e il cieco può vedere.",
+        "author": "Mark Twain",
+        "sentiment": "Love"
+    }, {
+        "quote": "Non esiste un cammino verso la felicità. La felicità è il cammino.",
+        "author": "Thich Nhat Hanh",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "La risata è una polvere detergente per l'anima.",
+        "author": "Thomas Carlyle",
+        "sentiment": "Funny"
+    }, {
+        "quote": "L'unico limite alla nostra realizzazione di domani sono i nostri dubbi di oggi.",
+        "author": "Franklin D. Roosevelt",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Ama tutti, fidati di pochi, non fare torto a nessuno.",
+        "author": "William Shakespeare",
+        "sentiment": "Love"
+    }, {
+        "quote": "La vita non è trovare se stessi, è creare se stessi.",
+        "author": "George Bernard Shaw",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La vita è troppo importante per essere presa seriamente.",
+        "author": "Oscar Wilde",
+        "sentiment": "Funny"
+    }, {
+        "quote": "Ci vuole coraggio per crescere e diventare chi sei davvero.",
+        "author": "E.E. Cummings",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La vita è un mistero da vivere, non un problema da risolvere.",
+        "author": "Soren Kierkegaard",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "Fai ciò che ami e non lavorerai un solo giorno nella tua vita.",
+        "author": "Confucio",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Le persone dimenticheranno ciò che hai detto, ma non dimenticheranno come le hai fatte sentire.",
+        "author": "Maya Angelou",
+        "sentiment": "Love"
+    }, {
+        "quote": "Le opportunità non accadono, le crei.",
+        "author": "Chris Grosser",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La creatività richiede coraggio.",
+        "author": "Henri Matisse",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Non puoi tornare indietro e cambiare l’inizio, ma puoi iniziare ora e cambiare il finale.",
+        "author": "C.S. Lewis",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Vivi come se fossi già quello che vuoi diventare.",
+        "author": "William James",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il cambiamento è la legge della vita, e coloro che guardano solo al passato o al presente perderanno il futuro.",
+        "author": "John F. Kennedy",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Sorridi, è la chiave che si adatta alla serratura del cuore di chiunque.",
+        "author": "Anthony J. D'Angelo",
+        "sentiment": "Love"
+    }, {
+        "quote": "Chi sogna di giorno sa molte cose che sfuggono a chi sogna solo di notte.",
+        "author": "Edgar Allan Poe",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "I libri sono gli amici più tranquilli e costanti e gli insegnanti più pazienti.",
+        "author": "Charles W. Eliot",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "Ama la vita che vivi, vivi la vita che ami.",
+        "author": "Bob Marley",
+        "sentiment": "Love"
+    }, {
+        "quote": "Ci sono due modi per diffondere luce: essere la candela o lo specchio che la riflette.",
+        "author": "Edith Wharton",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La vita è troppo breve per bere vini mediocri.",
+        "author": "Johann Wolfgang von Goethe",
+        "sentiment": "Funny"
+    }, {
+        "quote": "La felicità è quando ciò che pensi, ciò che dici e ciò che fai sono in armonia.",
+        "author": "Mahatma Gandhi",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La pace comincia con un sorriso.",
+        "author": "Madre Teresa di Calcutta",
+        "sentiment": "Love"
+    }, {
+        "quote": "L’ispirazione esiste, ma deve trovarti al lavoro.",
+        "author": "Pablo Picasso",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Ridere non è un brutto modo di iniziare l'amicizia. Ed è il migliore per concluderla.",
+        "author": "Oscar Wilde",
+        "sentiment": "Funny"
+    }, {
+        "quote": "Non puoi vivere una giornata perfetta senza fare qualcosa per qualcuno che non potrà mai ricambiarti.",
+        "author": "John Wooden",
+        "sentiment": "Love"
+    }, {
+        "quote": "La conoscenza parla, ma la saggezza ascolta.",
+        "author": "Jimi Hendrix",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "Ogni progresso avviene al di fuori della zona di comfort.",
+        "author": "Michael John Bobak",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "I limiti esistono solo nell'anima di chi è a corto di sogni.",
+        "author": "Philippe Petit",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Un viaggio di mille miglia inizia sempre con il primo passo.",
+        "author": "Lao Tzu",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Chi guarda fuori, sogna; chi guarda dentro, si sveglia.",
+        "author": "Carl Jung",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "La mente è come un paracadute, funziona solo se si apre.",
+        "author": "Albert Einstein",
+        "sentiment": "Funny"
+    }, {
+        "quote": "La felicità non è qualcosa di pronto. Viene dalle tue azioni.",
+        "author": "Dalai Lama",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Chiunque smetta di imparare è vecchio, che abbia venti o ottant'anni.",
+        "author": "Henry Ford",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Se vuoi che qualcosa venga detto, chiedi a un uomo; se vuoi che qualcosa venga fatto, chiedi a una donna.",
+        "author": "Margaret Thatcher",
+        "sentiment": "Funny"
+    }, {
+        "quote": "Nessuno può farti sentire inferiore senza il tuo consenso.",
+        "author": "Eleanor Roosevelt",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Ama ciò che hai, prima che la vita ti insegni ad amare ciò che hai perso.",
+        "author": "Anonimo",
+        "sentiment": "Love"
+    }, {
+        "quote": "Per arrivare all'alba non c'è altra via che la notte.",
+        "author": "Khalil Gibran",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Un sorriso è una curva che raddrizza tutto.",
+        "author": "Phyllis Diller",
+        "sentiment": "Funny"
+    }, {
+        "quote": "La libertà è il diritto di dire alla gente ciò che non vuole sentire.",
+        "author": "George Orwell",
+        "sentiment": "Mindfulness"
+    }, {
+        "quote": "Chi non ha mai commesso un errore non ha mai provato nulla di nuovo.",
+        "author": "Albert Einstein",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il più grande pericolo per la maggior parte di noi non è che il nostro obiettivo sia troppo alto e lo manchiamo, ma che sia troppo basso e lo raggiungiamo.",
+        "author": "Michelangelo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Senza amore, l'umanità non sopravvive.",
+        "author": "Dalai Lama",
+        "sentiment": "Love"
+    }, {
+        "quote": "Ogni minuto che passi arrabbiato perdi sessanta secondi di felicità.",
+        "author": "Ralph Waldo Emerson",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La cosa più difficile è prendere la decisione di agire; il resto è solo tenacia.",
+        "author": "Amelia Earhart",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il mondo appartiene a chi ha il coraggio di sognare e di rischiare per realizzare i propri sogni.",
+        "author": "Paulo Coelho",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Sii felice per questo momento. Questo momento è la tua vita.",
+        "author": "Omar Khayyam",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Gli amici sono la famiglia che scegliamo per noi stessi.",
+        "author": "Edna Buchanan",
+        "sentiment": "Love"
+    }, {
+        "quote": "Il coraggio non è assenza di paura, ma il trionfo su di essa.",
+        "author": "Nelson Mandela",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il pessimismo porta alla debolezza, l'ottimismo al potere.",
+        "author": "William James",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "L'unico modo per avere un amico è esserlo.",
+        "author": "Ralph Waldo Emerson",
+        "sentiment": "Love"
+    }, {
+        "quote": "Chi semina virtù raccoglie felicità.",
+        "author": "Leonardo da Vinci",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Le risate sono senza tempo, l'immaginazione non ha età e i sogni sono per sempre.",
+        "author": "Walt Disney",
+        "sentiment": "Funny"
+    }, {
+        "quote": "La felicità non è qualcosa già pronto. Viene dalle tue azioni.",
+        "author": "Dalai Lama",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Sorridi sempre, perché il tuo sorriso può essere la fonte di felicità di qualcun altro.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità non dipende da ciò che hai, ma da come scegli di vivere.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Fai quello che ti rende felice e non guardare mai indietro.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Non aspettare la felicità, costruiscila ogni giorno con piccoli passi.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La vita è bella se la vivi con gioia e positività.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è un viaggio, non una destinazione.",
+        "author": "Buddha",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Svegliati ogni giorno con un cuore grato e scoprirai la felicità in ogni momento.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La vera felicità nasce dal dentro e non dipende da fattori esterni.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Non puoi inseguire la felicità, ma puoi crearla ogni giorno.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è la strada, non la meta.",
+        "author": "Lao Tzu",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità non è la destinazione, ma il modo in cui viaggiamo.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Il segreto della felicità è apprezzare le piccole cose della vita.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Felicità è quando ciò che dici, ciò che pensi e ciò che fai sono in armonia.",
+        "author": "Mahatma Gandhi",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità non è qualcosa che si trova, ma che si costruisce ogni giorno.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è la chiave di tutto.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Quando sorridi, il mondo sorride con te.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è una scelta, non un destino.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Non cercare la felicità nei luoghi sbagliati.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Sorridi spesso, perché è un modo semplice per cambiare la giornata.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è un diritto di tutti. Inizia a viverla.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Sorridi, è la chiave della felicità.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Trova la felicità in ciò che fai e non lavorerai mai un solo giorno nella tua vita.",
+        "author": "Confucio",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è una vibrazione che attrae tutto ciò di cui hai bisogno.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è un modo di camminare.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Non dimenticare mai di essere felice, perché il tempo vola.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è un modo di pensare, non una condizione esterna.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La vera felicità viene dal dentro.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Sorridi, perché oggi è un giorno nuovo e pieno di opportunità.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è la chiave di tutto, inizia da te.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Non c'è felicità più grande di quella che troviamo nel sorriso di chi amiamo.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è una luce che si accende nel tuo cuore quando tutto sembra buio.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Felicità è fare ciò che ami e amare ciò che fai.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "Sorridi sempre, perché il sorriso è contagioso.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è il segreto che rende dolce la vita.",
+        "author": "Anonimo",
+        "sentiment": "Happiness"
+    }, {
+        "quote": "La felicità è un viaggio, non una destinazione.",
+        "author": "Lao Tzu",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Non perdere mai la speranza, perché domani potrebbe essere il giorno più bello della tua vita.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Ognuno di noi ha il potenziale per cambiare il mondo.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La vita è un’opportunità, coglila al volo.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La bellezza sta in ogni cosa, ma solo i sognatori riescono a vederla.",
+        "author": "Paulo Coelho",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La tua vita può essere l’avventura che hai sempre sognato.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Oggi è un nuovo giorno e ogni giorno è un’opportunità per crescere.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il coraggio non è assenza di paura, ma l’opportunità di superarla.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il cambiamento è inevitabile, ma crescerai attraverso di esso.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La tua storia può essere grandiosa se credi nei tuoi sogni.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Non puoi attraversare il mare stando fermo sulla riva.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La determinazione ti porta dove il talento non può arrivare.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Il futuro dipende da ciò che fai oggi.",
+        "author": "Mahatma Gandhi",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Non c’è nulla di impossibile per chi ha il coraggio di provarci.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La chiave del successo è non aver paura di fallire.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "La tua vita può essere ciò che vuoi che sia.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Non lasciarti fermare dalle tue paure, supera i tuoi limiti.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Sii il cambiamento che vuoi vedere nel mondo.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "L’ottimismo è la fede che porta al successo.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "I sogni sono il motore del futuro.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Non è mai troppo tardi per inseguire i tuoi sogni.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    }, {
+        "quote": "Oggi è il primo giorno del resto della tua vita.",
+        "author": "Anonimo",
+        "sentiment": "Inspirational"
+    },
+    {"quote": "Ogni giorno è una nuova pagina: scrivi parole che ti rendano felice.", "author": "ChatGPT", "sentiment": "Happiness"},
+    {"quote": "I sogni non scadono mai, solo tu puoi decidere di rinunciarci.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "La felicità non è l'assenza di problemi, ma la capacità di affrontarli con il sorriso.", "author": "ChatGPT", "sentiment": "Happiness"},
+    {"quote": "Se guardi il sole ogni mattina, l'ombra delle difficoltà si accorcia.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "La vita è come una canzone: anche le pause sono importanti per creare armonia.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "La felicità si trova nelle piccole cose, ma solo chi sa guardare davvero riesce a vederla.", "author": "ChatGPT", "sentiment": "Happiness"},
+    {"quote": "Ogni caduta è una lezione. Rialzati con un motivo in più per sorridere.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "Coltiva oggi ciò che vuoi raccogliere domani, sia nei sogni che nella vita.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "Il segreto della felicità sta nel saper ringraziare per ciò che hai mentre lavori per ciò che vuoi.", "author": "ChatGPT", "sentiment": "Happiness"},
+    {"quote": "Sii il sole nella giornata grigia di qualcuno: a volte basta un sorriso per fare la differenza.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "Quando il mondo ti sembra fermo, ricordati che il tuo cuore batte: vai avanti.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "Ogni sorriso è un piccolo investimento di felicità che torna sempre indietro.", "author": "ChatGPT", "sentiment": "Happiness"},
+    {"quote": "Non misurare la tua vita in anni, ma nei momenti in cui ti sei sentito davvero vivo.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "La gioia si moltiplica ogni volta che la condividi con gli altri.", "author": "ChatGPT", "sentiment": "Happiness"},
+    {"quote": "La vita è un viaggio senza mappe: l'importante è avanzare, un passo alla volta.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "Non lasciare che una nuvola copra il tuo cielo: c'è sempre un pezzo di sole che ti aspetta.", "author": "ChatGPT", "sentiment": "Happiness"},
+    {"quote": "La più grande vittoria è sconfiggere i propri dubbi un giorno alla volta.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "Nessun sogno è troppo grande se hai il coraggio di fare il primo passo.", "author": "ChatGPT", "sentiment": "Inspirational"},
+    {"quote": "La felicità si costruisce nelle piccole cose, perché è lì che si nasconde la magia della vita.", "author": "ChatGPT", "sentiment": "Happiness"},
+    {"quote": "Ogni scelta che fai è un mattone della tua felicità: costruisci con cura.", "author": "ChatGPT", "sentiment": "Inspirational"}
+]
+

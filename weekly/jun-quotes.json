@@ -1,0 +1,152 @@
+[
+    {
+        "author": "Leonardo da Vinci",
+        "quote": "La semplicità è la suprema sofisticazione.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Simón Bolívar",
+        "quote": "L'arte di vincere si impara nelle sconfitte.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Albert Einstein",
+        "quote": "È meglio essere ottimisti e avere torto che pessimisti e avere ragione.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Khalil Gibran",
+        "quote": "Non si può toccare l'alba se non si sono percorsi i sentieri della notte.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Sii il sole che illumina le giornate degli altri.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Dalai Lama",
+        "quote": "Un piccolo pensiero positivo al mattino può cambiare la tua giornata.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Vincent Van Gogh",
+        "quote": "Chi non ha mai affrontato difficoltà non conosce la propria forza.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Robert Kiyosaki",
+        "quote": "Non esiste il fallimento, esistono solo lezioni.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "La paura è solo una scelta, come il coraggio.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Antoine de Saint-Exupéry",
+        "quote": "Il vero amore inizia quando niente è cercato in cambio.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Elbert Hubbard",
+        "quote": "Un amico è qualcuno che sa tutto di te e ti ama lo stesso.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Chi ti ama davvero non ti abbandonerà mai, anche nei momenti più bui.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Proverbio cinese",
+        "quote": "Una risata può aggiungere un giorno alla tua vita.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Anatole France",
+        "quote": "L'ironia è l'ultimo stadio della saggezza.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "La vita è breve, ma i sorrisi che lasciamo durano per sempre.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Bono Vox",
+        "quote": "La musica può cambiare il mondo perché può cambiare le persone.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Walt Disney",
+        "quote": "Se puoi sognarlo, puoi farlo.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Jean de La Fontaine",
+        "quote": "La tristezza vola via sulle ali del tempo.",
+        "sentiment": "Happiness"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Ogni giorno è un nuovo inizio. Prendi un respiro profondo, sorridi e ricomincia.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "George R.R. Martin",
+        "quote": "La mente ha bisogno di libri come la spada ha bisogno di una mola.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Confucio",
+        "quote": "Le stelle sono buchi nel cielo da cui filtra la luce dell'infinito.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "George Bernard Shaw",
+        "quote": "Le persone non smettono di giocare perché invecchiano, ma invecchiano perché smettono di giocare.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Non sono le circostanze a definire chi sei, ma le tue decisioni.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Proverbio africano",
+        "quote": "Se vuoi andare veloce, vai da solo. Se vuoi andare lontano, vai insieme.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Beverly Sills",
+        "quote": "Non ci sono scorciatoie per nessun posto dove valga la pena andare.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "T.S. Eliot",
+        "quote": "Ogni momento è un nuovo inizio.",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "author": "Muhammad Ali",
+        "quote": "Non contare i giorni, fai sì che i giorni contino.",
+        "sentiment": "Inspirational"
+    },
+    {
+        "author": "Mark Twain",
+        "quote": "La gentilezza è una lingua che i sordi possono sentire e i ciechi possono vedere.",
+        "sentiment": "Love"
+    },
+    {
+        "author": "Anonimo",
+        "quote": "Non si smette di ridere invecchiando, si invecchia smettendo di ridere.",
+        "sentiment": "Funny"
+    },
+    {
+        "author": "Emily Dickinson",
+        "quote": "La speranza è la cosa con le piume che si posa sull'anima.",
+        "sentiment": "Inspirational"
+    }
+]

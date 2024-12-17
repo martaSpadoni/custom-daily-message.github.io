@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effetto Polaroid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('res/background/bg1.jpg');
+            background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
+            background-position: center; /* Centra l'immagine */
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        .polaroid {
+            background-color: white; /* Sfondo bianco per l'effetto polaroid */
+            padding: 10px; /* Margine interno per il bordo */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Ombra per l'effetto 3D */
+            border-radius: 5px; /* Arrotonda leggermente i bordi */
+            display: inline-block;
+            text-align: center; /* Centra il testo sotto la foto */
+            transform: rotate(-3deg); /* Leggera rotazione per l'effetto Polaroid inclinato */
+        }
+
+        .polaroid img {
+            max-width: 300px; /* Limita la larghezza dell'immagine */
+            height: auto; /* Mantiene le proporzioni */
+            border: 1px solid #ddd; /* Bordo sottile attorno all'immagine */
+        }
+
+        .polaroid p {
+            margin: 10px 0 0;
+            font-size: 14px; /* Testo sotto l'immagine */
+            color: #333; /* Colore del testo */
+            font-style: italic; /* Corsivo per un look più realistico */
+        }
+    </style>
+</head>
+<body>
+    <div class="polaroid">
+        <!-- Sostituisci il link sotto con il link diretto all'immagine da Google Drive -->
+        <img src="https://scontent.faoi2-2.fna.fbcdn.net/v/t1.6435-9/35970766_1302758659854047_6414552627446546432_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lLtHPgKuYo0Q7kNvgG6ZROk&_nc_zt=23&_nc_ht=scontent.faoi2-2.fna&_nc_gid=A6pIHB3ZxWk5KtsQVBJqcHD&oh=00_AYASde7lSKuoDaRcv1zdYdtlwNN8HlxVH2h_Zx9rpVYdsQ&oe=67879478" alt="Immagine Polaroid">
+        <p>Una giornata indimenticabile</p>
+    </div>
+</body>
+</html>

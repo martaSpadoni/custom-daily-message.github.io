@@ -1,0 +1,157 @@
+[
+    {
+        "quote": "Ama la vita che vivi, vivi la vita che ami.",
+        "author": "Bob Marley",
+        "sentiment": "Love"
+    },
+    {
+        "quote": "Ci sono due modi per diffondere luce: essere la candela o lo specchio che la riflette.",
+        "author": "Edith Wharton",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "La vita è troppo breve per bere vini mediocri.",
+        "author": "Johann Wolfgang von Goethe",
+        "sentiment": "Funny"
+    },
+    {
+        "quote": "La felicità è quando ciò che pensi, ciò che dici e ciò che fai sono in armonia.",
+        "author": "Mahatma Gandhi",
+        "sentiment": "Happiness"
+    },
+    {
+        "quote": "La pace comincia con un sorriso.",
+        "author": "Madre Teresa di Calcutta",
+        "sentiment": "Love"
+    },
+    {
+        "quote": "L’ispirazione esiste, ma deve trovarti al lavoro.",
+        "author": "Pablo Picasso",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Ridere non è un brutto modo di iniziare l'amicizia. Ed è il migliore per concluderla.",
+        "author": "Oscar Wilde",
+        "sentiment": "Funny"
+    },
+    {
+        "quote": "Non puoi vivere una giornata perfetta senza fare qualcosa per qualcuno che non potrà mai ricambiarti.",
+        "author": "John Wooden",
+        "sentiment": "Love"
+    },
+    {
+        "quote": "Ogni progresso avviene al di fuori della zona di comfort.",
+        "author": "Michael John Bobak",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "I limiti esistono solo nell'anima di chi è a corto di sogni.",
+        "author": "Philippe Petit",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Un viaggio di mille miglia inizia sempre con il primo passo.",
+        "author": "Lao Tzu",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Chi guarda fuori, sogna; chi guarda dentro, si sveglia.",
+        "author": "Carl Jung",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "quote": "La mente è come un paracadute, funziona solo se si apre.",
+        "author": "Albert Einstein",
+        "sentiment": "Funny"
+    },
+    {
+        "quote": "La felicità non è qualcosa di pronto. Viene dalle tue azioni.",
+        "author": "Dalai Lama",
+        "sentiment": "Happiness"
+    },
+    {
+        "quote": "Chiunque smetta di imparare è vecchio, che abbia venti o ottant'anni.",
+        "author": "Henry Ford",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Se vuoi che qualcosa venga detto, chiedi a un uomo; se vuoi che qualcosa venga fatto, chiedi a una donna.",
+        "author": "Margaret Thatcher",
+        "sentiment": "Funny"
+    },
+    {
+        "quote": "Ama ciò che hai, prima che la vita ti insegni ad amare ciò che hai perso.",
+        "author": "Anonimo",
+        "sentiment": "Love"
+    },
+    {
+        "quote": "Per arrivare all'alba non c'è altra via che la notte.",
+        "author": "Khalil Gibran",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Un sorriso è una curva che raddrizza tutto.",
+        "author": "Phyllis Diller",
+        "sentiment": "Funny"
+    },
+    {
+        "quote": "La libertà è il diritto di dire alla gente ciò che non vuole sentire.",
+        "author": "George Orwell",
+        "sentiment": "Mindfulness"
+    },
+    {
+        "quote": "Il più grande pericolo per la maggior parte di noi non è che il nostro obiettivo sia troppo alto e lo manchiamo, ma che sia troppo basso e lo raggiungiamo.",
+        "author": "Michelangelo",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Senza amore, l'umanità non sopravvive.",
+        "author": "Dalai Lama",
+        "sentiment": "Love"
+    },
+    {
+        "quote": "Ogni minuto che passi arrabbiato perdi sessanta secondi di felicità.",
+        "author": "Ralph Waldo Emerson",
+        "sentiment": "Happiness"
+    },
+    {
+        "quote": "La cosa più difficile è prendere la decisione di agire; il resto è solo tenacia.",
+        "author": "Amelia Earhart",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Il mondo appartiene a chi ha il coraggio di sognare e di rischiare per realizzare i propri sogni.",
+        "author": "Paulo Coelho",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Sii felice per questo momento. Questo momento è la tua vita.",
+        "author": "Omar Khayyam",
+        "sentiment": "Happiness"
+    },
+    {
+        "quote": "Gli amici sono la famiglia che scegliamo per noi stessi.",
+        "author": "Edna Buchanan",
+        "sentiment": "Love"
+    },
+    {
+        "quote": "Il coraggio non è assenza di paura, ma il trionfo su di essa.",
+        "author": "Nelson Mandela",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Il pessimismo porta alla debolezza, l'ottimismo al potere.",
+        "author": "William James",
+        "sentiment": "Inspirational"
+    },
+    {
+        "quote": "Chi semina virtù raccoglie felicità.",
+        "author": "Leonardo da Vinci",
+        "sentiment": "Happiness"
+    },
+    {
+        "quote": "Le risate sono senza tempo, l'immaginazione non ha età e i sogni sono per sempre.",
+        "author": "Walt Disney",
+        "sentiment": "Funny"
+    }
+]
