@@ -51,9 +51,10 @@
                 const month = today.toLocaleString('default', { month: 'short' });
                 const filename = month+'-quotes.json';
 
-                if(dayOfWeek != 0){
+                console.log("Today is ", dayOfWeek)
+                if(dayOfWeek != 1){
                     return {
-                        quote:"Non c'è niente per te qui oggi! Riprova " + days[dayOfWeek],
+                        quote:"Non c'è niente per te qui oggi! Riprova " + days[dayOfWeek-1],
                         author:"Mimmina"
                     }
                 }
