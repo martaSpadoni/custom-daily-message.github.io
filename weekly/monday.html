@@ -47,14 +47,14 @@
                 const today = new Date();
                 const day = today.getDate();
                 const dayOfWeek = today.getDay();
-                const days = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"]
+                const days = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"]
                 const month = today.toLocaleString('default', { month: 'short' });
                 const filename = month+'-quotes.json';
 
                 console.log("Today is ", dayOfWeek)
                 if(dayOfWeek != 1){
                     return {
-                        quote:"Non c'è niente per te qui oggi! Riprova " + days[dayOfWeek-1],
+                        quote:"Non c'è niente per te qui oggi! Riprova " + days[dayOfWeek],
                         author:"Mimmina"
                     }
                 }
