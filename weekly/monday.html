@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina con immagine di sfondo</title>
+    <title>Un messaggio per Mimmino</title>
     <style>
         body {
             margin: 0;
@@ -46,9 +46,17 @@
             async function fetchDailyQuote() {
                 const today = new Date();
                 const day = today.getDate();
+                const dayOfWeek = today.getDay();
+                const days = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"]
                 const month = today.toLocaleString('default', { month: 'short' });
-                // const filename = '../res/quotes/'+month+'-quotes.json';
-                const filename = 'dic-quotes.json';
+                const filename = month+'-quotes.json';
+
+                if(dayOfWeek != 0){
+                    return {
+                        quote:"Non c'è niente per te qui oggi! Riprova " + days[dayOfWeek],
+                        author:"Mimmina"
+                    }
+                }
                 
                 console.log("Retrieving quotes from ", filename)
                 const response = await fetch(filename);
