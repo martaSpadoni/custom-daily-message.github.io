@@ -68,7 +68,7 @@
                     const response = await fetchDailyQuote(); // Effettua la richiesta all'API
                     if (response == null) throw new Error('Errore nel recupero della citazione');
                     
-                    const data = await response.json(); // Converti la risposta in JSON
+                    // const data = await response.json(); // Converti la risposta in JSON
                     document.getElementById('quote').textContent = data.quote; // Inserisci la citazione nella pagina const frase = data[0].quote; // Estrai la prima citazione
                     document.getElementById('author').textContent = data.author; // Inserisci la citazione nella pagina
                 } catch (error) {
