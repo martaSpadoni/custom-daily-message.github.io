@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicca il Palloncino!</title>
+    <style>
+        /* Stile generale per il gioco */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #87CEEB;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+            user-select: none; /* Evita selezioni accidentali */
+        }
+
+        h1 {
+            color: #fff;
+            margin: 10px;
+        }
+
+        #game-container {
+            position: relative;
+            width: 100vw;
+            height: 90vh;
+            background: linear-gradient(to top, #87CEEB, #f0f8ff);
+            overflow: hidden;
+        }
+
+        /* Stile del palloncino */
+        .balloon {
+            position: absolute;
+            width: 60px;
+            height: 80px;
+            background-color: red;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            animation: float 4s linear infinite;
+        }
+
+        /* Animazione fluttuante */
+        @keyframes float {
+            0% {
+                transform: translateY(10px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(10px);
+            }
+        }
+
+        /* Punteggio e timer */
+        #score, #timer {
+            font-size: 1.5rem;
+            color: #fff;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        /* Messaggio finale */
+        #end-message {
+            display: none;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #ff4500;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Clicca il Palloncino! 🎈</h1>
+    <div id="score">Punteggio: 0</div>
+    <div id="timer">Tempo: 30s</div>
+    <div id="game-container"></div>
+    <div id="end-message">Tempo Scaduto! Il tuo punteggio è: <span id="final-score"></span></div>
+
+    <script>
+        const gameContainer = document.getElementById("game-container");
+        const scoreDisplay = document.getElementById("score");
+        const timerDisplay = document.getElementById("timer");
+        const endMessage = document.getElementById("end-message");
+        const finalScore = document.getElementById("final-score");
+
+        let score = 0;
+        let gameTime = 30; // Durata del gioco in secondi
+        let gameInterval;
+
+        // Funzione per creare un palloncino
+        function createBalloon() {
+            const balloon = document.createElement("div");
+            balloon.classList.add("balloon");
+
+            // Posizione casuale
+            const x = Math.random() * (window.innerWidth - 60);
+            const y = Math.random() * (window.innerHeight - 150);
+
+            balloon.style.left = `${x}px`;
+            balloon.style.top = `${y}px`;
+
+            // Evento click sul palloncino
+            balloon.addEventListener("click", () => {
+                score++;
+                scoreDisplay.textContent = `Punteggio: ${score}`;
+                balloon.remove();
+            });
+
+            // Rimuove automaticamente il palloncino dopo 3 secondi
+            setTimeout(() => {
+                balloon.remove();
+            }, 3000);
+
+            gameContainer.appendChild(balloon);
+        }
+
+        // Funzione per aggiornare il timer
+        function updateTimer() {
+            gameTime--;
+            timerDisplay.textContent = `Tempo: ${gameTime}s`;
+
+            if (gameTime === 0) {
+                clearInterval(gameInterval);
+                clearInterval(timer);
+                endGame();
+            }
+        }
+
+        // Funzione per terminare il gioco
+        function endGame() {
+            gameContainer.innerHTML = ""; // Rimuove tutti i palloncini
+            endMessage.style.display = "block";
+            finalScore.textContent = score;
+        }
+
+        // Inizia il gioco
+        function startGame() {
+            gameInterval = setInterval(() => {
+                createBalloon();
+            }, 800); // Nuovo palloncino ogni 800ms
+
+            timer = setInterval(updateTimer, 1000); // Aggiorna il timer ogni secondo
+        }
+
+        startGame();
+    </script>
+</body>
+</html>
