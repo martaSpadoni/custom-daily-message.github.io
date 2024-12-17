@@ -3,51 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effetto Polaroid</title>
+    <title>Un messaggio per Mimmino</title>
     <style>
         body {
             margin: 0;
             padding: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-image: url('../res/background/bg1.jpg');
+            flex-direction: column;
+            background-image: url('../res/background/bg3.jpg');
             background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
             background-position: center; /* Centra l'immagine */
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+            color: black; /* Colore del testo */
             font-family: Arial, sans-serif;
         }
 
-        .polaroid {
-            background-color: white; /* Sfondo bianco per l'effetto polaroid */
-            padding: 10px; /* Margine interno per il bordo */
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Ombra per l'effetto 3D */
-            border-radius: 5px; /* Arrotonda leggermente i bordi */
-            display: inline-block;
-            text-align: center; /* Centra il testo sotto la foto */
-            transform: rotate(-3deg); /* Leggera rotazione per l'effetto Polaroid inclinato */
+        h1 {
+            font-size: 1em;
+            text-align: center;
+            margin-left: 5em;
+            margin-right: 5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.384); /* Aggiunge un'ombra al testo per maggiore leggibilità */
         }
 
-        .polaroid img {
-            max-width: 300px; /* Limita la larghezza dell'immagine */
-            height: auto; /* Mantiene le proporzioni */
-            border: 1px solid #ddd; /* Bordo sottile attorno all'immagine */
-        }
-
-        .polaroid p {
-            margin: 10px 0 0;
-            font-size: 14px; /* Testo sotto l'immagine */
-            color: #333; /* Colore del testo */
-            font-style: italic; /* Corsivo per un look più realistico */
+        p {
+            font-size: 9pt;
+            text-align: center;
+            margin-left: 5em;
+            margin-right: 5em;
         }
     </style>
 </head>
 <body>
-    <div class="polaroid">
-        <!-- Sostituisci il link sotto con il link diretto all'immagine da Google Drive -->
-        <img src="https://scontent.faoi2-2.fna.fbcdn.net/v/t1.6435-9/35970766_1302758659854047_6414552627446546432_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=lLtHPgKuYo0Q7kNvgG6ZROk&_nc_zt=23&_nc_ht=scontent.faoi2-2.fna&_nc_gid=A6pIHB3ZxWk5KtsQVBJqcHD&oh=00_AYASde7lSKuoDaRcv1zdYdtlwNN8HlxVH2h_Zx9rpVYdsQ&oe=67879478" alt="Immagine Polaroid">
-        <p>Una giornata indimenticabile</p>
-    </div>
+    <h1 id="quote">Caricando la frase del giorno...</h1>
+
+    <p id="author"> Mimmina </p>
+
+        <script>
+            async function fetchDailyQuote() {
+                const FILE_DAY = 3;
+                const today = new Date();
+                const day = today.getDate();
+                const dayOfWeek = today.getDay();
+                const days = ["domenica", "lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato"]
+                const month = today.toLocaleString('default', { month: 'short' });
+                const filename = month+'-quotes.json';
+
+                console.log("Today is ", dayOfWeek)
+                if(dayOfWeek != FILE_DAY){
+                    return {
+                        quote:"Non c'è niente per te qui oggi! Riprova " + days[FILE_DAY],
+                        author:"Mimmina"
+                    }
+                }
+                
+                console.log("Retrieving quotes from ", filename)
+                const response = await fetch(filename);
+                const data = await response.json();
+                const quote = data[day - 1];
+
+                if (quote) {
+                return quote;
+                } else {
+                console.error(`Citazione non trovata per il giorno ${day} ${month}`);
+                return null;
+                }
+            }
+            // Funzione per recuperare la citazione dall'API
+            async function caricaFrase() {
+                try {
+                    const data = await fetchDailyQuote(); // Effettua la richiesta all'API
+                    if (data == null) throw new Error('Errore nel recupero della citazione');
+                    
+                    // const data = await response.json(); // Converti la risposta in JSON
+                    document.getElementById('quote').textContent = data.quote; // Inserisci la citazione nella pagina const frase = data[0].quote; // Estrai la prima citazione
+                    document.getElementById('author').textContent = data.author; // Inserisci la citazione nella pagina
+                } catch (error) {
+                    console.error('Errore nel caricamento della citazione:', error);
+                    document.getElementById('quote').textContent = 'Impossibile caricare una citazione.';
+                }
+            }
+    
+            // Chiamata alla funzione al caricamento della pagina
+            caricaFrase();
+        </script>
 </body>
 </html>
