@@ -44,6 +44,7 @@
 
         <script>
             async function fetchDailyQuote() {
+                const FILE_DAY = 6;
                 const today = new Date();
                 const day = today.getDate();
                 const dayOfWeek = today.getDay();
@@ -52,9 +53,9 @@
                 const filename = month+'-quotes.json';
 
                 console.log("Today is ", dayOfWeek)
-                if(dayOfWeek != 6){
+                if(dayOfWeek != FILE_DAY){
                     return {
-                        quote:"Non c'è niente per te qui oggi! Riprova " + days[dayOfWeek],
+                        quote:"Non c'è niente per te qui oggi! Riprova " + days[FILE_DAY],
                         author:"Mimmina"
                     }
                 }
