@@ -10,22 +10,35 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             overflow: hidden;
-            background-color: #000;
+            background-image: url('../res/background/bg2.jpg');
+            background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
+            background-position: center; /* Centra l'immagine */
+            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
             font-family: 'Arial', sans-serif;
-            color: #fff;
+            color: black;
             text-align: center;
         }
 
         /* Contenitore del messaggio */
-        #message {
-            position: absolute;
-            top: 30%;
-            width: 100%;
-            font-size: 2rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8);
-            z-index: 2;
+        h1 {
+            font-size: 1em;
+            text-align: center;
+            margin-left: 5em;
+            margin-right: 5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.384); /* Aggiunge un'ombra al testo per maggiore leggibilità */
+        }
+
+        p {
+            font-size: 9pt;
+            text-align: center;
+            margin-left: 5em;
+            margin-right: 5em;
         }
 
         /* Canvas per i fuochi d'artificio */
@@ -41,8 +54,9 @@
     </style>
 </head>
 <body>
-    <!-- Messaggio di auguri -->
-    <div id="message">🎆 Buon Anno Nuovo! 🎆</div>
+    
+    <h1 id="quote">Caricando la frase del giorno...</h1>
+    <p id="author"> Mimmina </p>
 
     <!-- Canvas per l'effetto fuochi d'artificio -->
     <canvas id="fireworksCanvas"></canvas>
@@ -108,15 +122,42 @@
             requestAnimationFrame(animate);
         }
 
-        // Genera fuochi d'artificio a intervalli
-        setInterval(createFirework, 1000);
-        animate();
+        const FILE_DAY = 1;
+        const FILE_MONTH = 0;
+        const today = new Date();
+        const day = today.getDate();
+        const monthNumber = today.getMonth();
 
-        // Ridimensionamento canvas al cambio di orientamento
-        window.addEventListener("resize", () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
+        if(day != FILE_DAY || monthNumber != FILE_MONTH){
+            document.getElementById('quote').textContent = "Non c'è niente per te qui oggi! Riprova nel giorno " + FILE_DAY + "/" + (FILE_MONTH+1);
+            document.getElementById('author').textContent = "Mimmina";
+        } else {
+             // Mostra lo sfondo e il canvas solo se la condizione è vera
+            document.body.style.backgroundImage = "url('../res/images/nuovoAnno.jpg')";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.backgroundPosition = "center";
+            document.body.style.backgroundRepeat = "no-repeat";
+
+            // // Nasconde il testo
+            document.getElementById('quote').textContent = "";
+            document.getElementById('author').textContent = "";
+
+            // Mostra il canvas per i fuochi d'artificio
+            canvas.style.display = "block";
+
+            // Genera fuochi d'artificio a intervalli
+            setInterval(createFirework, 1000);
+            animate();
+
+            // Ridimensiona il canvas se la finestra cambia dimensione
+            window.addEventListener("resize", () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+              // Genera fuochi d'artificio a intervalli
+            setInterval(createFirework, 1000);
+            animate();
+        }
     </script>
 </body>
 </html>
