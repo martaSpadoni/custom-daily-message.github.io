@@ -52,12 +52,12 @@
                 const month = today.toLocaleString('default', { month: 'short' });
                 const filename = month+'-quotes.json';
 
-                if(day != FILE_DAY || monthNumber != FILE_MONTH){
-                    return {
-                        quote:"Non c'è niente per te qui oggi! Riprova nel giorno " + FILE_DAY + "/" + (FILE_MONTH+1),
-                        author:"Mimmina"
-                    }
-                }
+                // if(day != FILE_DAY || monthNumber != FILE_MONTH){
+                //     return {
+                //         quote:"Non c'è niente per te qui oggi! Riprova nel giorno " + FILE_DAY + "/" + (FILE_MONTH+1),
+                //         author:"Mimmina"
+                //     }
+                // }
                 
                 console.log("Retrieving quotes from ", filename)
                 const response = await fetch(filename);
