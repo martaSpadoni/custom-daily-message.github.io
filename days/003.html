@@ -50,7 +50,7 @@
                 const day = today.getDate();
                 const monthNumber = today.getMonth();
                 const month = today.toLocaleString('default', { month: 'short' });
-                const filename = month+'-quotes.json';
+                const filename = '../res/'+month+'-quotes.json';
 
                 if(day != FILE_DAY || monthNumber != FILE_MONTH){
                     return {
