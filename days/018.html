@@ -54,7 +54,7 @@
                 console.log("Retrieving quotes from ", filename)
                 const response = await fetch(filename);
                 const data = await response.json();
-                const quote = data[day - 1];
+                const quote = data[17];
 
                 if (quote) {
                 return quote;
