@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratta e Vinci</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-image: url('..\\res\\images\\motivi_bg.jpg');
+            background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
+            background-position: center; /* Centra l'immagine */
+            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+            background-color: #f0f8ff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 5px;
+        }
+
+        .scratch-card {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            background-color: red;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .scratch-card::before {
+            content: \"\";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: silver;
+            z-index: 2;
+        }
+
+        .scratch-card canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        #r1{
+            background-image: url('..\\res\\images\\reason3.jpg');
+            background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
+            background-position: center; /* Centra l'immagine */
+            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */ 
+        }
+
+        #r2{
+            background-image: url('..\\res\\images\\reason2.jpg');
+            background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
+            background-position: center; /* Centra l'immagine */
+            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */ 
+        }
+
+        #r3{
+            background-image: url('..\\res\\images\\reason1.jpg');
+            background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
+            background-position: center; /* Centra l'immagine */
+            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */ 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="r1" class="scratch-card">
+            <canvas></canvas>
+        </div>
+        <div id="r2" class="scratch-card">
+            <canvas></canvas>
+        </div>
+        <div id="r3" class="scratch-card">
+            <canvas></canvas>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.scratch-card').forEach(card => {
+            const canvas = card.querySelector('canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Imposta le dimensioni del canvas
+            canvas.width = card.offsetWidth;
+            canvas.height = card.offsetHeight;
+
+            // Riempie il canvas con il colore "grattabile"
+            ctx.fillStyle = 'silver';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Cambia l'operazione per la gomma
+            ctx.globalCompositeOperation = 'destination-out';
+
+            let isDrawing = false;
+
+            const getPosition = (e) => {
+                const rect = canvas.getBoundingClientRect();
+                return {
+                    x: (e.touches ? e.touches[0].clientX : e.clientX) - rect.left,
+                    y: (e.touches ? e.touches[0].clientY : e.clientY) - rect.top
+                };
+            };
+
+            const startDrawing = (e) => {
+                e.preventDefault();
+                isDrawing = true;
+                const { x, y } = getPosition(e);
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                draw(e); // Disegna il primo punto
+            };
+
+            const stopDrawing = () => {
+                e.preventDefault();
+                isDrawing = false;
+                ctx.closePath();
+            };
+
+            const draw = (e) => {
+                e.preventDefault();
+                if (!isDrawing) return;
+                const { x, y } = getPosition(e);
+                ctx.lineWidth = 20;
+                ctx.lineCap = 'round';
+                ctx.lineTo(x, y);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+            };
+
+            // Eventi per mouse
+            canvas.addEventListener('mousedown', startDrawing);
+            canvas.addEventListener('mousemove', draw);
+            canvas.addEventListener('mouseup', stopDrawing);
+
+            // Eventi per touch
+            canvas.addEventListener('touchstart', startDrawing);
+            canvas.addEventListener('touchmove', draw);
+            canvas.addEventListener('touchend', stopDrawing);
+        });
+    </script>
+</body>
+</html>
