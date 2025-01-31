@@ -108,65 +108,72 @@
         document.querySelectorAll('.scratch-card').forEach(card => {
             const canvas = card.querySelector('canvas');
             const ctx = canvas.getContext('2d');
+            const img = new Image();
+            img.src = '..\\res\\images\\heart_solid.jpg';
+            img.onload = () => {
+                // Imposta le dimensioni del canvas
+                canvas.width = card.offsetWidth;
+                canvas.height = card.offsetHeight;
 
-            // Imposta le dimensioni del canvas
-            canvas.width = card.offsetWidth;
-            canvas.height = card.offsetHeight;
+                // Riempie il canvas con il colore "grattabile"
+                // ctx.fillStyle = 'silver';
+                // ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // Riempie il canvas con il colore "grattabile"
-            ctx.fillStyle = 'silver';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
 
-            // Cambia l'operazione per la gomma
-            ctx.globalCompositeOperation = 'destination-out';
+                // Cambia l'operazione per la gomma
+                ctx.globalCompositeOperation = 'destination-out';
 
-            let isDrawing = false;
+                let isDrawing = false;
 
-            const getPosition = (e) => {
-                const rect = canvas.getBoundingClientRect();
-                return {
-                    x: (e.touches ? e.touches[0].clientX : e.clientX) - rect.left,
-                    y: (e.touches ? e.touches[0].clientY : e.clientY) - rect.top
+                const getPosition = (e) => {
+                    const rect = canvas.getBoundingClientRect();
+                    return {
+                        x: (e.touches ? e.touches[0].clientX : e.clientX) - rect.left,
+                        y: (e.touches ? e.touches[0].clientY : e.clientY) - rect.top
+                    };
                 };
-            };
 
-            const startDrawing = (e) => {
-                e.preventDefault();
-                isDrawing = true;
-                const { x, y } = getPosition(e);
-                ctx.beginPath();
-                ctx.moveTo(x, y);
-                draw(e); // Disegna il primo punto
-            };
+                const startDrawing = (e) => {
+                    e.preventDefault();
+                    isDrawing = true;
+                    const { x, y } = getPosition(e);
+                    ctx.beginPath();
+                    ctx.moveTo(x, y);
+                    draw(e); // Disegna il primo punto
+                };
 
-            const stopDrawing = () => {
-                e.preventDefault();
-                isDrawing = false;
-                ctx.closePath();
-            };
+                const stopDrawing = () => {
+                    e.preventDefault();
+                    isDrawing = false;
+                    ctx.closePath();
+                };
 
-            const draw = (e) => {
-                e.preventDefault();
-                if (!isDrawing) return;
-                const { x, y } = getPosition(e);
-                ctx.lineWidth = 20;
-                ctx.lineCap = 'round';
-                ctx.lineTo(x, y);
-                ctx.stroke();
-                ctx.beginPath();
-                ctx.moveTo(x, y);
-            };
+                const draw = (e) => {
+                    e.preventDefault();
+                    if (!isDrawing) return;
+                    const { x, y } = getPosition(e);
+                    ctx.lineWidth = 20;
+                    ctx.lineCap = 'round';
+                    ctx.lineTo(x, y);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(x, y);
+                };
 
-            // Eventi per mouse
-            canvas.addEventListener('mousedown', startDrawing);
-            canvas.addEventListener('mousemove', draw);
-            canvas.addEventListener('mouseup', stopDrawing);
+                // Eventi per mouse
+                canvas.addEventListener('mousedown', startDrawing);
+                canvas.addEventListener('mousemove', draw);
+                canvas.addEventListener('mouseup', stopDrawing);
 
-            // Eventi per touch
-            canvas.addEventListener('touchstart', startDrawing);
-            canvas.addEventListener('touchmove', draw);
-            canvas.addEventListener('touchend', stopDrawing);
-        });
+                // Eventi per touch
+                canvas.addEventListener('touchstart', startDrawing);
+                canvas.addEventListener('touchmove', draw);
+                canvas.addEventListener('touchend', stopDrawing);
+        };
+
+    });
+          
     </script>
 </body>
 </html>
