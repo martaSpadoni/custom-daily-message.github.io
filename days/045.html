@@ -1,24 +1,95 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un messaggio per Mimmino</title>
+    <title>Gratta e Vinci</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
-            height: 100vh;
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            background-image: url('../res/background/bg1.jpg');
+            height: 100vh;
+            width: 100vw;
+            background-image: url('..\\res\\background\\bg7.jpg');
             background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
             background-position: center; /* Centra l'immagine */
             background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
-            color: black; /* Colore del testo */
-            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 5px;
+        }
+
+        .scratch-card {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            background-color: red;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .scratch-card::before {
+            content: \"\";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: silver;
+            z-index: 2;
+        }
+
+        .scratch-card canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        #r1{
+            background-image: url('..\\res\\images\\reason3.jpg');
+            background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
+            background-position: center; /* Centra l'immagine */
+            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */ 
+            display: none;
+        }
+
+        #r2{
+            background-image: url('..\\res\\images\\reason2.jpg');
+            background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
+            background-position: center; /* Centra l'immagine */
+            display: none;
+            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */ 
+        }
+
+        #r3{
+            background-image: url('..\\res\\images\\reason1.jpg');
+            background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
+            background-position: center; /* Centra l'immagine */
+            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */ 
+            display: none;
         }
 
         h1 {
@@ -35,58 +106,115 @@
             margin-left: 5em;
             margin-right: 5em;
         }
+
+
     </style>
 </head>
 <body>
-    <h1 id="quote">Caricando la frase del giorno...</h1>
+    <div class="container">
+        <h1 id="quote">Caricando la frase del giorno...</h1>
 
-    <p id="author"> Mimmina </p>
+        <p id="author"> Mimmina </p>
 
-        <script>
-            async function fetchDailyQuote() {
-                const FILE_DAY = 14;
-                const FILE_MONTH = 1;
-                const today = new Date();
-                const day = today.getDate();
-                const monthNumber = today.getMonth();
-                const month = today.toLocaleString('default', { month: 'short' });
-                const filename = month+'-quotes.json';
+        <div id="r1" class="scratch-card">
+            <canvas></canvas>
+        </div>
+        <div id="r2" class="scratch-card">
+            <canvas></canvas>
+        </div>
+        <div id="r3" class="scratch-card">
+            <canvas></canvas>
+        </div>
+    </div>
 
-                if(day != FILE_DAY || monthNumber != FILE_MONTH){
-                    return {
-                        quote:"Non c'è niente per te qui oggi! Riprova nel giorno " + FILE_DAY + "/" + (FILE_MONTH+1),
-                        author:"Mimmina"
-                    }
-                }
-                
-                console.log("Retrieving quotes from ", filename)
-                const response = await fetch(filename);
-                const data = await response.json();
-                const quote = data[day - 1];
+    <script>
+        const FILE_DAY = 14;
+        const FILE_MONTH = 1;
+        const today = new Date();
+        const day = today.getDate();
+        const monthNumber = today.getMonth();
 
-                if (quote) {
-                return quote;
-                }else {
-                console.error(`Citazione non trovata per il giorno $14 $1`);
-                return null;
-                }
-            }
-            // Funzione per recuperare la citazione dall'API
-            async function caricaFrase() {
-                try {
-                    const data = await fetchDailyQuote();
-                    if (data == null) throw new Error('Errore nel recupero della citazione');
-                    
-                
-                    document.getElementById('quote').textContent = data.quote;
-                    document.getElementById('author').textContent = data.author;
-                }catch (error) {
-                    console.error('Errore nel caricamento della citazione:', error);
-                    document.getElementById('quote').textContent = 'Impossibile caricare una citazione.';
-                }
-            }
+        if(day != FILE_DAY || monthNumber != FILE_MONTH){
+            quote.textContent = "Non c'è niente per te qui oggi! Riprova nel giorno " + FILE_DAY + "/" + (FILE_MONTH+1);
+            author.textContent = "Mimmina";
+        } else {
+            // // Nasconde il testo
+            quote.textContent = "";
+            author.textContent = "";
 
-            caricaFrase();
-        </script>
+            document.body.style.background =  "url('../res/images/motivi_bg.jpg') no-repeat center/cover";
+            document.getElementById('r1').style.display =  "block";
+            document.getElementById('r2').style.display =  "block";
+            document.getElementById('r3').style.display =  "block";
+            document.querySelectorAll('.scratch-card').forEach(card => {
+                const canvas = card.querySelector('canvas');
+                const ctx = canvas.getContext('2d');
+                const img = new Image();
+                img.src = '..\\res\\images\\heart_solid.jpg';
+                img.onload = () => {
+                    // Imposta le dimensioni del canvas
+                    canvas.width = card.offsetWidth;
+                    canvas.height = card.offsetHeight;
+
+                    // Riempie il canvas con il colore "grattabile"
+                    // ctx.fillStyle = 'silver';
+                    // ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
+
+                    // Cambia l'operazione per la gomma
+                    ctx.globalCompositeOperation = 'destination-out';
+
+                    let isDrawing = false;
+
+                    const getPosition = (e) => {
+                        const rect = canvas.getBoundingClientRect();
+                        return {
+                            x: (e.touches ? e.touches[0].clientX : e.clientX) - rect.left,
+                            y: (e.touches ? e.touches[0].clientY : e.clientY) - rect.top
+                        };
+                    };
+
+                    const startDrawing = (e) => {
+                        e.preventDefault();
+                        isDrawing = true;
+                        const { x, y } = getPosition(e);
+                        ctx.beginPath();
+                        ctx.moveTo(x, y);
+                        draw(e); // Disegna il primo punto
+                    };
+
+                    const stopDrawing = () => {
+                        e.preventDefault();
+                        isDrawing = false;
+                        ctx.closePath();
+                    };
+
+                    const draw = (e) => {
+                        e.preventDefault();
+                        if (!isDrawing) return;
+                        const { x, y } = getPosition(e);
+                        ctx.lineWidth = 20;
+                        ctx.lineCap = 'round';
+                        ctx.lineTo(x, y);
+                        ctx.stroke();
+                        ctx.beginPath();
+                        ctx.moveTo(x, y);
+                    };
+
+                    // Eventi per mouse
+                    canvas.addEventListener('mousedown', startDrawing);
+                    canvas.addEventListener('mousemove', draw);
+                    canvas.addEventListener('mouseup', stopDrawing);
+
+                    // Eventi per touch
+                    canvas.addEventListener('touchstart', startDrawing);
+                    canvas.addEventListener('touchmove', draw);
+                    canvas.addEventListener('touchend', stopDrawing);
+        };
+
+    });
+        }
+    </script>
 </body>
 </html>
