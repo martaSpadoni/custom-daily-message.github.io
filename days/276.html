@@ -52,9 +52,9 @@
                 const month = today.toLocaleString('default', { month: 'short' });
                 const filename = month+'-quotes.json';
 
-                if(day != FILE_DAY || monthNumber != FILE_MONTH){
+                if(day != FILE_DAY || monthNumber != FILE_MONTH || true){
                     return {
-                        quote:"Non c'è niente per te qui oggi! Riprova nel giorno " + FILE_DAY + "/" + (FILE_MONTH+1),
+                        quote:"Dovrai aspettare ancora un po' per scoprire cosa ho in serbo per te",
                         author:"Mimmina"
                     }
                 }
