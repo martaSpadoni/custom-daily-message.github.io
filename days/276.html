@@ -9,6 +9,7 @@
             margin: 0;
             padding: 0;
             height: 100vh;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,6 +18,7 @@
             background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
             background-position: center; /* Centra l'immagine */
             background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+            transition: background-image 1s ease-in-out;
             color: black; /* Colore del testo */
             font-family: Arial, sans-serif;
         }
@@ -35,6 +37,13 @@
             margin-left: 5em;
             margin-right: 5em;
         }
+
+        @media (max-width: 768px) {
+            body {
+                background-size: contain; /* tutta l’immagine visibile */
+                background-color: black;  /* sfondo neutro se restano bordi */
+            }
+        }
     </style>
 </head>
 <body>
@@ -43,50 +52,42 @@
     <p id="author"> Mimmina </p>
 
         <script>
-            async function fetchDailyQuote() {
-                const FILE_DAY = 3;
-                const FILE_MONTH = 9;
-                const today = new Date();
-                const day = today.getDate();
-                const monthNumber = today.getMonth();
-                const month = today.toLocaleString('default', { month: 'short' });
-                const filename = month+'-quotes.json';
+            const FILE_DAY = 3;
+            const FILE_MONTH = 9;
+            const today = new Date();
+            const day = today.getDate();
+            const monthNumber = today.getMonth();
+            const month = today.toLocaleString('default', { month: 'short' });
+            const filename = month+'-quotes.json';
 
-                if(day != FILE_DAY || monthNumber != FILE_MONTH || true){
-                    return {
-                        quote:"Dovrai aspettare ancora un po' per scoprire cosa ho in serbo per te",
-                        author:"Mimmina"
-                    }
-                }
-                
-                console.log("Retrieving quotes from ", filename)
-                const response = await fetch(filename);
-                const data = await response.json();
-                const quote = data[day - 1];
+            const images = [
+            '../res/images/anniversario1.png',
+            '../res/images/anniversario2.png',
+            '../res/images/anniversario3.png'
+            ];
+            let index = 0;
 
-                if (quote) {
-                return quote;
-                }else {
-                console.error(`Citazione non trovata per il giorno $3 $9`);
-                return null;
-                }
-            }
-            // Funzione per recuperare la citazione dall'API
-            async function caricaFrase() {
-                try {
-                    const data = await fetchDailyQuote();
-                    if (data == null) throw new Error('Errore nel recupero della citazione');
-                    
-                
-                    document.getElementById('quote').textContent = data.quote;
-                    document.getElementById('author').textContent = data.author;
-                }catch (error) {
-                    console.error('Errore nel caricamento della citazione:', error);
-                    document.getElementById('quote').textContent = 'Impossibile caricare una citazione.';
-                }
+            function changeBackgroundImage() {
+                document.body.style.background =  `url('${images[index]}') no-repeat center/cover`;
+                index = (index + 1) % images.length; // torna all’inizio dopo l’ultima immagine
             }
 
-            caricaFrase();
+            if(day != FILE_DAY || monthNumber != FILE_MONTH){
+                let data = {
+                    quote:"Dovrai aspettare ancora un po' per scoprire cosa ho in serbo per te",
+                    author:"Mimmina"
+                }
+
+                document.getElementById('quote').textContent = data.quote;
+                document.getElementById('author').textContent = data.author;
+
+            } else {
+                quote.textContent = "";
+                author.textContent = "";
+                changeBackgroundImage();
+                // Poi ogni 5 secondi
+                setInterval(changeBackgroundImage, 5000);
+            }
         </script>
 </body>
 </html>
