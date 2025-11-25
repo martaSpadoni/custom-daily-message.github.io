@@ -118,6 +118,43 @@
         }
     }
 
+    
+    #game-container {
+        text-align: center;
+    }
+
+    #puzzle {
+        width: 360px;
+        height: 360px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 2px;
+        margin: 0 auto;
+        background: #222;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .tile {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: transform .15s;
+    }
+
+    .tile:hover {
+        transform: scale(1.05);
+    }
+
+    #completed {
+        margin-top: 20px;
+        display: none;
+        font-size: 22px;
+    }
+
+
 </style>
 </head>
 
@@ -133,6 +170,13 @@
     <div id="sorpresa-box">
         <h2 id="titolo-sorpresa"></h2>
         <p id="testo-sorpresa"></p>
+        <div id="game-container">
+            <h2>Ricomponi il Puzzle ❤️</h2>
+
+            <div id="puzzle"></div>
+
+            <div id="completed">🎉 Puzzle completato! Bravo Mimmino 😍</div>
+        </div>
         <button id="back">Torna al calendario</button>
     </div>
 </div>
@@ -280,20 +324,17 @@ function apriSorpresa(giorno) {
     if(giorno < oggi) {
         mostraErrore(giorno)
     } else {
-        fetch(`tile-swap.html`)
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById("sorpresa-box").innerHTML = html;
-            document.getElementById("sorpresa-box").style.display = "block";
-        })
-        .catch(() => {
-            document.getElementById("sorpresa").innerHTML =
-                `<p>Errore nel caricamento della sorpresa ${giorno}.</p>`;
-        });
+        document.getElementById("titolo-sorpresa").style.display = "none";
+        document.getElementById("testo-sorpresa").style.display = "none";
+        document.getElementById("game-container").style.display = "block";
+        createPuzzle()
     }
 }
 
 function mostraErrore(giorno){
+    document.getElementById("game-container").style.display = "none";
+    document.getElementById("titolo-sorpresa").style.display = "block";
+    document.getElementById("testo-sorpresa").style.display = "block";
     document.getElementById("titolo-sorpresa").innerText = "🎁 Sorpresa del giorno " + giorno;
     document.getElementById("testo-sorpresa").innerText = regaloAperto;
 }
@@ -302,9 +343,94 @@ function mostraErrore(giorno){
 function tornaCalendario() {
     document.getElementById("sorpresa").style.display = "none";
     document.getElementById("calendar").style.display = "flex";
+    clearGame()
 }
 
 document.getElementById("back").onclick = tornaCalendario
+
+/* ========================================================
+   CONFIGURA QUI I TUOI PEZZI DEL PUZZLE
+   ======================================================== */
+
+   const tilesBasePath = "../res/images/christmas/games/tileSwap"
+   const gridSize = 6
+   const tiles = [];
+
+   for(let i = 0; i < gridSize; i++){
+    for(let j=0; j<gridSize; j++){
+        tiles.push(`${tilesBasePath}/${j}${i}.jpg`)
+    }
+   }
+
+/* ========================================================
+   LOGICA DEL TILE SWAP PUZZLE
+   ======================================================== */
+
+const puzzleEl = document.getElementById("puzzle");
+
+// Copia la lista corretta per controllare la soluzione
+const correctOrder = [...tiles];
+
+// Mescola casualmente
+let shuffled = [...tiles].sort(() => Math.random() - 0.5);
+
+let firstClicked = null;
+
+function createPuzzle() {
+    for (let i = 0; i < shuffled.length; i++) {
+        const img = document.createElement("img");
+        img.src = shuffled[i];
+        img.classList.add("tile");
+        img.dataset.index = i;
+
+        img.addEventListener("click", () => tileClicked(img));
+
+        puzzleEl.appendChild(img);
+    }
+}
+
+function tileClicked(tile) {
+    if (!firstClicked) {
+        firstClicked = tile;
+        tile.style.outline = "3px solid yellow";
+        return;
+    }
+
+    // Secondo click → scambia
+    swapTiles(firstClicked, tile);
+
+    firstClicked.style.outline = "none";
+    firstClicked = null;
+
+    checkWin();
+}
+
+function swapTiles(tileA, tileB) {
+    const indexA = tileA.dataset.index;
+    const indexB = tileB.dataset.index;
+
+    // scambia le immagini nel DOM
+    let tempSrc = tileA.src;
+    tileA.src = tileB.src;
+    tileB.src = tempSrc;
+
+    // aggiorna l’array
+    let temp = shuffled[indexA];
+    shuffled[indexA] = shuffled[indexB];
+    shuffled[indexB] = temp;
+}
+
+function checkWin() {
+    if (shuffled.every((v,i) => v === correctOrder[i])) {
+        document.getElementById("completed").style.display = "block";
+    }
+}
+
+function clearGame(){
+    puzzleEl.innerHTML = "";
+}
+
+
 </script>
 
 </body>
