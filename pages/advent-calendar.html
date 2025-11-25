@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendario dell'Avvento</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Georgia", serif;
+        background: url('../res/images/christmas/Christmas_20251125_113848_0000.png') no-repeat center top;
+        background-size: contain;
+        background-color: #d3c39a;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    /* Contenitore centrale */
+    #calendar, #sorpresa {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Griglia dei bottoni */
+    .grid {
+        margin-top: 100px;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    /* Bottoni giorno */
+    .day-btn {
+        width: 100%;
+        padding-bottom: 100%;
+        position: relative;
+        border: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #d3c39a;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .day-btn:hover {
+        transform: scale(1.1);
+    }
+
+    .current-day {
+        outline: 4px solid #b11616;
+        outline-offset: -3px;
+        border-radius: 10px;
+        animation: pulse 1.6s infinite ease-in-out;
+    }
+
+    /* SCHERMATA SORPRESA */
+    #sorpresa { display: none;}
+
+    #sorpresa-box {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 20px;
+        padding: 30px;
+        max-width: 600px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    #back {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background: #c62828;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #back:hover {
+        background: #9b1f1f;
+    }
+
+    #snow-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; /* non blocca i click */
+        z-index: 5; /* sopra lo sfondo, sotto il contenuto */
+    }
+
+    /* Animazione */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 0px 0 rgba(255, 0, 0, 0.7);
+        }
+        50% {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px 12px rgba(255, 0, 0, 0.3);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0px 0 rgba(255, 0, 0, 0);
+        }
+    }
+
+</style>
+</head>
+
+<body>
+<canvas id="snow-canvas"></canvas>
+<!-- CALENDARIO -->
+<div id="calendar">
+    <div class="grid" id="dayContainer"></div>
+</div>
+
+<!-- PAGINA SORPRESA -->
+<div id="sorpresa">
+    <div id="sorpresa-box">
+        <h2 id="titolo-sorpresa"></h2>
+        <p id="testo-sorpresa"></p>
+        <button id="back">Torna al calendario</button>
+    </div>
+</div>
+
+<script>
+
+const canvas = document.getElementById("snow-canvas");
+const ctx = canvas.getContext("2d");
+
+let width = canvas.width = window.innerWidth;
+let height = canvas.height = window.innerHeight;
+
+let flakes = [];
+
+// Crea fiocchi
+function createFlakes() {
+    for (let i = 0; i < 120; i++) {
+        flakes.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            r: Math.random() * 3 + 1,
+            d: Math.random() + 0.2
+        });
+    }
+}
+
+// Disegna fiocchi
+function drawFlakes() {
+    ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = "rgba(255, 255, 255, 0.9)";
+    ctx.beginPath();
+    for (let i = 0; i < flakes.length; i++) {
+        let f = flakes[i];
+        ctx.moveTo(f.x, f.y);
+        ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
+    }
+    ctx.fill();
+    moveFlakes();
+}
+
+// Muovi fiocchi
+let angle = 0;
+function moveFlakes() {
+    angle += 0.001;
+    for (let i = 0; i < flakes.length; i++) {
+        let f = flakes[i];
+        f.y += Math.pow(f.d, 2) + 1;
+        f.x += Math.sin(angle) * 0.8;
+
+        if (f.y > height) {
+            flakes[i] = {
+                x: Math.random() * width,
+                y: 0,
+                r: f.r,
+                d: f.d
+            };
+        }
+    }
+}
+
+function updateSnow() {
+    drawFlakes();
+    requestAnimationFrame(updateSnow);
+}
+
+// Adatta alla finestra
+window.addEventListener('resize', () => {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+});
+
+// Avvia
+createFlakes();
+updateSnow();
+
+/* --- CONFIGURAZIONE --- */
+// Inserisci qui le 25 sorprese
+const regaloAperto = "Mimmino ingordo hai già ricevuto\n questo regalino"
+const sorprese = [
+    "Mimmino ingordo hai già ricevuto\n questo regalino",
+    "Playlist personalizzata",
+    "Memory dei ricordi",
+    "Coupon per un massaggio",
+    "Ricetta da fare insieme",
+    "Quiz «Quanto mi conosci?»",
+    "Messaggio segreto 'scratch'",
+    "Indovinello natalizio",
+    "Biglietto per una serata film",
+    "Mini-appuntamento a sorpresa",
+    "Galleria foto romantica",
+    "Storia interattiva",
+    "Coupon creativo",
+    "Poesia d’amore natalizia",
+    "Puzzle digitale",
+    "Caccia al tesoro",
+    "Dolcetto sorpresa",
+    "Lista delle cose che amo di te",
+    "Audio-messaggio",
+    "Serata coccole",
+    "Calza digitale",
+    "Disegno natalizio",
+    "Messaggio 'apri il cuore'",
+    "Grande sorpresa finale",
+    "Messaggio di Natale per il 25"
+];
+
+// Per ciascun giorno puoi mettere l’immagine del bottone:
+const buttonImg = "../res/images/christmas";  
+// Cambialo con il percorso reale delle tue immagini
+
+
+/* --- GENERAZIONE CALENDARIO --- */
+
+const container = document.getElementById("dayContainer");
+// const oggi = new Date().getDate();  // giorno del mese
+const oggi = 15;  // giorno del mese
+
+for (let i = 1; i <= 24; i++) {
+    const btn = document.createElement("button");
+    btn.className = "day-btn";
+    btn.style.backgroundImage = `url('${buttonImg}/${i}.png')`;
+
+    // comportamento clic
+    btn.onclick = () => apriSorpresa(i);
+
+    // disattiva giorni futuri
+    if (i > oggi) {
+        btn.style.opacity = "0.5";
+        btn.style.pointerEvents = "none";
+    }
+
+    if(i == oggi){
+        btn.classList.add("current-day")
+    }
+
+    container.appendChild(btn);
+}
+
+/* --- MOSTRA SORPRESA --- */
+
+function apriSorpresa(giorno) {
+    document.getElementById("calendar").style.display = "none";
+    document.getElementById("sorpresa").style.display = "flex";
+
+    if(giorno < oggi) {
+        mostraErrore(giorno)
+    } else {
+        fetch(`tile-swap.html`)
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById("sorpresa-box").innerHTML = html;
+            document.getElementById("sorpresa-box").style.display = "block";
+        })
+        .catch(() => {
+            document.getElementById("sorpresa").innerHTML =
+                `<p>Errore nel caricamento della sorpresa ${giorno}.</p>`;
+        });
+    }
+}
+
+function mostraErrore(giorno){
+    document.getElementById("titolo-sorpresa").innerText = "🎁 Sorpresa del giorno " + giorno;
+    document.getElementById("testo-sorpresa").innerText = regaloAperto;
+}
+/* --- TORNA AL CALENDARIO --- */
+
+function tornaCalendario() {
+    document.getElementById("sorpresa").style.display = "none";
+    document.getElementById("calendar").style.display = "flex";
+}
+
+document.getElementById("back").onclick = tornaCalendario
+</script>
+
+</body>
+</html>

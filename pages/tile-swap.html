@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Puzzle – Tile Swap</title>
+
+<style>
+    body {
+        font-family: "Georgia", serif;
+        background: url('../res/images/christmas/Christmas_20251125_113848_0000.png') no-repeat center top;
+        background-size: contain;
+        background-color: #d3c39a;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    #game-container {
+        text-align: center;
+    }
+
+    #puzzle {
+        width: 360px;
+        height: 360px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 2px;
+        margin: 0 auto;
+        background: #222;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .tile {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: transform .15s;
+    }
+
+    .tile:hover {
+        transform: scale(1.05);
+    }
+
+    #completed {
+        margin-top: 20px;
+        display: none;
+        font-size: 22px;
+    }
+
+    #back {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background: #c62828;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="game-container">
+    <h2>Ricomponi il Puzzle ❤️</h2>
+
+    <div id="puzzle"></div>
+
+    <div id="completed">🎉 Puzzle completato! Bravo Mimmino 😍</div>
+
+    <button id="back" onclick="tornaCalendario()">Torna al calendario</button>
+</div>
+
+
+<script>
+/* ========================================================
+   CONFIGURA QUI I TUOI PEZZI DEL PUZZLE
+   ======================================================== */
+
+   const tilesBasePath = "../res/images/christmas/games/tileSwap"
+   const gridSize = 6
+   const tiles = [];
+
+   for(let i = 0; i < gridSize; i++){
+    for(let j=0; j<gridSize; j++){
+        tiles.push(`${tilesBasePath}/${j}${i}.jpg`)
+    }
+   }
+
+/* ========================================================
+   LOGICA DEL TILE SWAP PUZZLE
+   ======================================================== */
+
+const puzzleEl = document.getElementById("puzzle");
+
+// Copia la lista corretta per controllare la soluzione
+const correctOrder = [...tiles];
+
+// Mescola casualmente
+let shuffled = [...tiles].sort(() => Math.random() - 0.5);
+
+let firstClicked = null;
+
+function createPuzzle() {
+    for (let i = 0; i < shuffled.length; i++) {
+        const img = document.createElement("img");
+        img.src = shuffled[i];
+        img.classList.add("tile");
+        img.dataset.index = i;
+
+        img.addEventListener("click", () => tileClicked(img));
+
+        puzzleEl.appendChild(img);
+    }
+}
+
+function tileClicked(tile) {
+    if (!firstClicked) {
+        firstClicked = tile;
+        tile.style.outline = "3px solid yellow";
+        return;
+    }
+
+    // Secondo click → scambia
+    swapTiles(firstClicked, tile);
+
+    firstClicked.style.outline = "none";
+    firstClicked = null;
+
+    checkWin();
+}
+
+function swapTiles(tileA, tileB) {
+    const indexA = tileA.dataset.index;
+    const indexB = tileB.dataset.index;
+
+    // scambia le immagini nel DOM
+    let tempSrc = tileA.src;
+    tileA.src = tileB.src;
+    tileB.src = tempSrc;
+
+    // aggiorna l’array
+    let temp = shuffled[indexA];
+    shuffled[indexA] = shuffled[indexB];
+    shuffled[indexB] = temp;
+}
+
+function checkWin() {
+    if (shuffled.every((v,i) => v === correctOrder[i])) {
+        document.getElementById("completed").style.display = "block";
+    }
+}
+
+createPuzzle();
+
+/* ========================================================
+   TASTO "TORNA AL CALENDARIO"
+   ======================================================== */
+function tornaCalendario() {
+    if (window.parent && window.parent.tornaCalendario) {
+        window.parent.tornaCalendario();
+    } else {
+        window.location.href = "../index.html"; 
+    }
+}
+</script>
+
+</body>
+</html>
