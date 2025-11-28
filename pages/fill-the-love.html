@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riempi il Cuore</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, #d10047, #89002c);
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        user-select: none;
+    }
+
+    #container {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    /* Messaggio dinamico */
+    #dynamic-msg {
+        font-size: 22px;
+        margin-bottom: 15px;
+        height: 35px; /* spazio riservato per evitare spostamenti */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.3s ease;
+    }
+
+    /* --- CONTAINER CUORE --- */
+    #heart-wrapper {
+        position: relative;
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+    }
+
+    #heart-outline,
+    #heart-fill {
+        font-size: 200px;
+        line-height: 1;
+        width: 200px;
+        height: 200px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #heart-outline {
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    #heart-fill {
+        z-index: 2;
+        color: #ff4c78;
+        clip-path: inset(100% 0 0 0);
+        transition: clip-path 0.25s ease-out;
+    }
+
+    #tap-here {
+        margin-top: 15px;
+        font-size: 20px;
+        opacity: 0.8;
+    }
+
+    #message {
+        margin-top: 20px;
+        font-size: 22px;
+        display: none;
+    }
+
+    #back-btn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        background: white;
+        color: #d10047;
+        font-size: 18px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<div id="container">
+
+    <!-- MESSAGGIO DINAMICO -->
+    <div id="dynamic-msg">Il mio cuore quando sei lontano</div>
+
+    <!-- CUORE -->
+    <div id="heart-wrapper">
+        <div id="heart-fill">❤️</div>
+        <div id="heart-outline">🤍</div>
+    </div>
+
+    <div id="tap-here">Tocca il cuore per riempirlo</div>
+
+    <div id="message">
+        Il tuo amore mi riempie il cuore! 💕<br>
+        <button id="back-btn" onclick="history.back()">Torna al calendario</button>
+    </div>
+</div>
+
+<script>
+let progress = 7;
+let totalProgress = 77;
+
+const fill = document.getElementById("heart-fill");
+const message = document.getElementById("message");
+const tap = document.getElementById("tap-here");
+const msg = document.getElementById("dynamic-msg");
+
+function updateMessage(p) {
+    const percent = p / totalProgress;
+
+    msg.style.opacity = 0;
+
+    setTimeout(() => {
+        if (percent < 0.2) msg.textContent = "Il mio cuore quando sei lontano";
+        else if (percent < 0.4) msg.textContent = "Il mio cuore quando stiamo per rivederci";
+        else if (percent < 0.6) msg.textContent = "Il mio cuore quando ti vedo da lontano ✨";
+        else if (percent < 0.8) msg.textContent = "Il mio cuore quando ci abbracciamo 💞";
+        else if (percent < 1) msg.textContent = "Il mio cuore quando ci baciamo ❤️‍🔥";
+        else msg.textContent = "Il mio cuore quando mi dici TI AMO";
+
+        msg.style.opacity = 1;
+    }, 160);
+}
+
+document.getElementById("heart-wrapper").addEventListener("click", () => {
+    if (progress >= totalProgress) return;
+
+    progress += 7;
+    if (progress > totalProgress) progress = totalProgress;
+
+    const clipValue = 100 - (progress / totalProgress * 100);
+    fill.style.clipPath = `inset(${clipValue}% 0 0 0)`;
+
+    updateMessage(progress);
+
+    if (progress === totalProgress) {
+        tap.style.display = "none";
+        message.style.display = "block";
+    }
+});
+</script>
+
+</body>
+</html>

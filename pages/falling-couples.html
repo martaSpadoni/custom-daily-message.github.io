@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falling Match Game</title>
+<style>
+    body {
+        margin: 0;
+        background: linear-gradient(to bottom, #112, #344);
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        touch-action: manipulation;
+    }
+
+    #game-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .fall-object {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 14px;
+        box-shadow: 0 0 6px rgba(255,255,255,0.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        user-select: none;
+        cursor: pointer;
+        will-change: transform;
+        animation-name: fall;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fall {
+        from { transform: translateY(-100px); }
+        to   { transform: translateY(110vh); }
+    }
+
+    #score {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        color: white;
+        font-size: 22px;
+        z-index: 999;
+    }
+
+    #game-over {
+        display: none;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 36px;
+    }
+</style>
+</head>
+<body>
+
+<div id="game-container">
+    <div id="score">Punteggio: 0</div>
+    <div id="game-over">GAME OVER<br><small>Tocca per ricaricare</small></div>
+</div>
+
+<script>
+/* ===================================
+   CONFIGURAZIONE
+=================================== */
+const CONFIG = {
+    fallTime: 5500,
+    pairDelayMin: 300,
+    pairDelayMax: 1200,
+    spawnSetInterval: 2500,
+    colors: ["#e74c3c","#8e44ad","#3498db","#16a085","#f39c12","#d35400"],
+    icons: ["🎁","⭐","❤️","❄️","🎄","🍬"]
+};
+
+let score = 0;
+let selected = null;
+let running = true;
+const container = document.getElementById("game-container");
+
+/* ===================================
+   CREAZIONE OGGETTI CON ANIMAZIONE CSS
+=================================== */
+function spawnObject(pairId, value) {
+    const obj = document.createElement("div");
+    obj.classList.add("fall-object");
+
+    const duration = CONFIG.fallTime + "ms";
+    obj.style.animationDuration = duration;
+
+    obj.dataset.pair = pairId;
+    obj.dataset.value = value;
+
+    obj.style.background = CONFIG.colors[Math.floor(Math.random() * CONFIG.colors.length)];
+    obj.textContent = CONFIG.icons[value % CONFIG.icons.length];
+
+    obj.style.left = Math.random() * (window.innerWidth - 70) + "px";
+
+    container.appendChild(obj);
+
+    // Fine animazione = ha toccato terra → game over
+    obj.addEventListener("animationend", () => {
+        if (running) endGame();
+    });
+
+    // CLICK/TAP IMMEDIATO
+    obj.addEventListener("pointerdown", () => handleClick(obj));
+}
+
+/* ===================================
+   CLICK GESTITO IN MODO IMMEDIATO
+=================================== */
+function handleClick(obj) {
+    if (!running) return;
+
+    if (!selected) {
+        selected = obj;
+        obj.style.outline = "4px solid white";
+    } else {
+        if (selected.dataset.pair === obj.dataset.pair && selected !== obj) {
+            score++;
+            document.getElementById("score").textContent = "Punteggio: " + score;
+            selected.remove();
+            obj.remove();
+        } else {
+            selected.style.outline = "";
+        }
+        selected = null;
+    }
+}
+
+/* ===================================
+   GENERA DUE COPPIE INSIEME
+=================================== */
+function spawnTwoPairs() {
+    if (!running) return;
+
+    for (let i = 0; i < 2; i++) {
+        const id = "pair-" + Date.now() + "-" + i;
+        const value = Math.floor(Math.random() * 10000);
+
+        spawnObject(id, value);
+
+        const delay = CONFIG.pairDelayMin + Math.random() * (CONFIG.pairDelayMax - CONFIG.pairDelayMin);
+
+        setTimeout(() => {
+            spawnObject(id, value);
+        }, delay);
+    }
+}
+
+/* ===================================
+   GAME OVER
+=================================== */
+function endGame() {
+    running = false;
+    document.getElementById("game-over").style.display = "block";
+    document.getElementById("game-over").onclick = () => location.reload();
+}
+
+/* AVVIO GIOCO */
+spawnTwoPairs();
+setInterval(spawnTwoPairs, CONFIG.spawnSetInterval);
+</script>
+
+</body>
+</html>

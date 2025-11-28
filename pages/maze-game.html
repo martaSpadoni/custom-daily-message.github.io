@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Labirinto dell'Amore</title>
+<style>
+    body {
+        margin: 0;
+        background: #222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
+
+    #maze {
+        display: grid;
+        grid-template-columns: repeat(7, 50px);
+        grid-template-rows: repeat(11, 50px);
+        gap: 2px;
+        background: #111;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .cell {
+        width: 50px;
+        height: 50px;
+        background: #333;
+        border-radius: 6px;
+    }
+
+    .wall {
+        background: #555;
+    }
+
+    #player {
+        background: #ff0060;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+    }
+
+    #exit {
+        background: #24c75f;
+    }
+
+    #controls {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    button {
+        padding: 15px 20px;
+        margin: 5px;
+        font-size: 20px;
+        background: #ff0060;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 80px;
+    }
+</style>
+</head>
+<body>
+
+<div>
+    <div id="maze"></div>
+    <div id="controls">
+        <button onclick="move(0,-1)">⬆</button><br>
+        <button onclick="move(-1,0)">⬅</button>
+        <button onclick="move(1,0)">➡</button><br>
+        <button onclick="move(0,1)">⬇</button>
+    </div>
+</div>
+
+<script>
+/* LABIRINTO (0=vuoto, 1=muro) */
+const layout = [
+ [1,1,1,1,1,1,1],
+ [1,0,0,0,1,0,1],
+ [1,0,1,0,1,0,1],
+ [1,0,1,0,0,0,1],
+ [1,0,1,1,1,0,1],
+ [1,0,0,0,1,0,1],
+ [1,1,1,0,1,0,1],
+ [1,0,0,0,1,0,1],
+ [1,0,1,1,1,0,1],
+ [1,0,0,0,0,0,1],
+ [1,1,1,1,1,1,1]
+];
+
+const maze = document.getElementById("maze");
+let playerX = 1, playerY = 1;
+const exitX = 5, exitY = 9;
+
+function renderMaze() {
+    maze.innerHTML = "";
+
+    for (let y = 0; y < layout.length; y++) {
+        for (let x = 0; x < layout[0].length; x++) {
+            const div = document.createElement("div");
+            div.classList.add("cell");
+
+            if (layout[y][x] === 1) div.classList.add("wall");
+            if (x === playerX && y === playerY) {
+                div.id = "player";
+                div.textContent = "❤️";
+            }
+            if (x === exitX && y === exitY) {
+                div.id = "exit";
+            }
+
+            maze.appendChild(div);
+        }
+    }
+}
+
+function move(dx, dy) {
+    const nx = playerX + dx;
+    const ny = playerY + dy;
+
+    if (layout[ny][nx] === 1) return; // muro
+
+    playerX = nx;
+    playerY = ny;
+    renderMaze();
+
+    if (playerX === exitX && playerY === exitY) {
+        setTimeout(() => {
+            alert("Hai raggiunto l'uscita! 💘");
+            history.back();
+        }, 200);
+    }
+}
+
+renderMaze();
+</script>
+
+</body>
+</html>
