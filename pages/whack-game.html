@@ -85,6 +85,17 @@
         border-radius: 10px;
         cursor: pointer;
     }
+
+    button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        background: #b22222;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
 </style>
 </head>
 
@@ -101,6 +112,7 @@
 <div id="end-screen">
     <div id="end-message"></div>
     <button id="restart" onclick="startGame()">Ricomincia</button>
+    <button id="back" onclick="window.history.back()">Torna al calendario</button>
 </div>
 
 <script>
@@ -126,8 +138,8 @@ const MALUS_IMAGES = [
 
 // 🔥 difficoltà configurabile
 let HOLES = 6;              // numero di buche
-let SPAWN_RATE = 900;       // intervallo tra uno spawn e l’altro
-let POP_UP_TIME = 800;      // tempo in cui l’oggetto resta fuori dal buco
+let SPAWN_RATE = 1200;       // intervallo tra uno spawn e l’altro
+let POP_UP_TIME = 900;      // tempo in cui l’oggetto resta fuori dal buco
 let MALUS_PROB = 0.4;       // probabilità che esca un malus
 
 // condizioni di vittoria
@@ -254,7 +266,7 @@ function spawnItem() {
 
 function checkEnd() {
     if (score >= SCORE_TO_WIN) {
-        endGame("🎉 Hai vinto! Hai colpito abbastanza bonus!");
+        endGame("🎉 Hai vinto! Bravo l'amore mio!");
     }
 
     if (fails >= FAILS_TO_LOSE) {
