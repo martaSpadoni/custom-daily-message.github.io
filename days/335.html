@@ -259,6 +259,7 @@ const buttonImg = "../res/images/christmas";
 const container = document.getElementById("dayContainer");
 const oggi = new Date().getDate();  // giorno del mese
 const mese = new Date().getMonth()+1;  // giorno del mese
+const unblockedDay = 1;
 
 
 if(mese == 12){
@@ -277,12 +278,14 @@ function generateCalendar(){
         btn.onclick = () => apriSorpresa(i);
 
         // disattiva giorni futuri
-        if (i > oggi) {
+        if (i >= unblockedDay) {
             btn.style.opacity = "0.5";
             btn.style.pointerEvents = "none";
         }
 
-        if(i == oggi){
+        if(i == unblockedDay && oggi == unblockedDay){
+            btn.style.opacity = "1";
+            btn.style.pointerEvents = "auto";
             btn.classList.add("current-day")
         }
 
@@ -297,7 +300,7 @@ function apriSorpresa(giorno) {
     document.getElementById("calendar").style.display = "none";
     document.getElementById("sorpresa").style.display = "flex";
 
-    if(giorno < oggi) {
+    if(giorno < unblockedDay) {
         mostraErrore(giorno)
     } else {
         document.getElementById("titolo-sorpresa").style.display = "none";
