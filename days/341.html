@@ -259,7 +259,7 @@ const buttonImg = "../res/images/christmas";
 /* --- GENERAZIONE CALENDARIO --- */
 
 const container = document.getElementById("dayContainer");
-const oggi = 7;  // giorno del mese
+const oggi = new Date().getDate();  // giorno del mese
 const mese = new Date().getMonth()+1;  // giorno del mese
 const unblockedDay = 7;
 
