@@ -294,10 +294,11 @@ for (let i = 1; i <= 24; i++) {
 /* --- MOSTRA SORPRESA --- */
 
 function apriSorpresa(giorno) {
+    console.log(giorno, unblockedDay, oggi)
     document.getElementById("calendar").style.display = "none";
     document.getElementById("sorpresa").style.display = "flex";
 
-    if(giorno < unblockedDay) {
+    if(giorno != oggi || oggi != unblockedDay) {
         mostraErrore(giorno)
     } else {
         document.getElementById("titolo-sorpresa").style.display = "none";
