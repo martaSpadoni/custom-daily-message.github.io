@@ -152,7 +152,7 @@
         <h2 id="titolo-sorpresa"></h2>
         <p id="testo-sorpresa"></p>
         <div id="game-container">
-            <button id="game-button" onclick="window.location.href='../pages/whack-game-friends.html'"> Inizia il gioco</a>
+            <button id="game-button" onclick="window.location.href='../pages/endless-run-friends.html'"> Inizia il gioco</a>
         </div>
         <button id="back">Torna al calendario</button>
     </div>
@@ -244,7 +244,7 @@ const container = document.getElementById("dayContainer");
 // const oggi = new Date().getDate();  // giorno del mese
 const oggi = new Date().getDate();  // giorno del mese
 const mese = new Date().getMonth()+1;
-const unblockedDay = 11
+const unblockedDay = 12
 
 for (let i = 1; i <= 24; i++) {
     const btn = document.createElement("button");
@@ -275,7 +275,7 @@ function apriSorpresa(giorno) {
     document.getElementById("calendar").style.display = "none";
     document.getElementById("sorpresa").style.display = "flex";
 
-    if(giorno != oggi || oggi != unblockedDay) {
+    if(giorno != oggi || oggi != unblockedDay){
         mostraErrore(giorno)
     } else {
         document.getElementById("titolo-sorpresa").style.display = "none";
