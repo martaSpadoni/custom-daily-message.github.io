@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mimmi indovina</title>
+
+<style>
+    body {
+        margin: 0;
+        background: url("../res/images/christmas/fan-slider.png") no-repeat center center fixed;
+        background-size: cover;
+        background-color: #d3c39a;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    /* TITOLO BEN VISIBILE */
+    h2 {
+        margin-top: 20px;
+        font-size: 24px;
+        text-align: center;
+        z-index: 10;
+    }
+
+    /* CONTENITORE DEL VENTAGLIO */
+    .fan-container {
+        position: relative;
+        width: 260px;
+        height: 260px;
+        margin-top: 200px;
+        margin-bottom: 80px; /* spazio per lo slider */
+        flex-shrink: 0;
+    }
+
+    /* Adattamento per schermi piccoli */
+    @media (max-height: 750px) {
+        .fan-container {
+            transform: scale(0.8);
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+    }
+
+    @media (max-height: 650px) {
+        .fan-container {
+            transform: scale(0.7);
+            margin-top: 0px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+
+    .fan-image {
+        position: absolute;
+        width: 160px;
+        height: 220px;
+        left: 50%;
+        top: 80%;
+        transform-origin: bottom center;
+        transform: translate(-50%, -100%) rotate(0deg);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        transition: transform 0.12s linear;
+    }
+
+    /* SLIDER FISSO E SEMPRE VISIBILE */
+    .slider-wrapper {
+        position: fixed;
+        bottom: max(150px, env(safe-area-inset-bottom));
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 20;
+        background: rgba(0,0,0,0.3);
+        padding: 12px 15px;
+        border-radius: 20px;
+        backdrop-filter: blur(4px);
+    }
+
+    #fanSlider {
+        width: 100%;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="fan-container" id="fanContainer">
+    <img src="../res/images/christmas/games/message/01.png" class="fan-image" id="img1">
+    <img src="../res/images/christmas/games/message/02.png" class="fan-image" id="img2">
+    <img src="../res/images/christmas/games/message/03.png" class="fan-image" id="img3">
+    <img src="../res/images/christmas/games/message/04.png" class="fan-image" id="img4">
+    <img src="../res/images/christmas/games/message/mimmini-natalizi.jpg" class="fan-image" id="img5">
+</div>
+
+<div class="slider-wrapper">
+    <input type="range" min="0" max="100" value="0" id="fanSlider">
+</div>
+
+<script>
+const images = document.querySelectorAll(".fan-image");
+const slider = document.getElementById("fanSlider");
+
+const MAX_SPREAD = 90; // apertura massima del ventaglio (gradi)
+
+slider.addEventListener("input", () => {
+    const val = slider.value / 100; // 0 → 1
+    const total = images.length;
+    const half = (total - 1) / 2;
+
+    images.forEach((img, i) => {
+        const offset = i - half;
+        const angle = offset * (MAX_SPREAD / half) * val;
+        img.style.transform = `translate(-50%, -100%) rotate(${angle}deg)`;
+    });
+});
+</script>
+
+</body>
+</html>
