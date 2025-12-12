@@ -1,92 +1,307 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un messaggio per Mimmino</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-image: url('../res/background/bg3.jpg');
-            background-size: cover; /* Adatta l'immagine alle dimensioni della pagina */
-            background-position: center; /* Centra l'immagine */
-            background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
-            color: black; /* Colore del testo */
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendario dell'Avvento</title>
 
-        h1 {
-            font-size: 1em;
-            text-align: center;
-            margin-left: 5em;
-            margin-right: 5em;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.384); /* Aggiunge un'ombra al testo per maggiore leggibilità */
-        }
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Georgia", serif;
+        background: url('../res/images/christmas/Christmas_20251125_113848_0000.png') no-repeat center top;
+        background-size: contain;
+        background-color: #d3c39a;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
 
-        p {
-            font-size: 9pt;
-            text-align: center;
-            margin-left: 5em;
-            margin-right: 5em;
+    /* Contenitore centrale */
+    #calendar, #sorpresa {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Griglia dei bottoni */
+    .grid {
+        margin-top: 100px;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    /* Bottoni giorno */
+    .day-btn {
+        width: 100%;
+        padding-bottom: 100%;
+        position: relative;
+        border: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #d3c39a;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .day-btn:hover {
+        transform: scale(1.1);
+    }
+
+    .current-day {
+        outline: 4px solid #b11616;
+        outline-offset: -3px;
+        border-radius: 10px;
+        animation: pulse 1.6s infinite ease-in-out;
+    }
+
+    /* SCHERMATA SORPRESA */
+    #sorpresa { display: none;}
+
+    #sorpresa-box {
+        background: rgba(255, 255, 255, 0.85);
+        border-radius: 20px;
+        padding: 30px;
+        max-width: 600px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    #back {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background: #c62828;
+        color: white;
+        font-size: 18px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #back:hover {
+        background: #9b1f1f;
+    }
+
+    #snow-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; /* non blocca i click */
+        z-index: 5; /* sopra lo sfondo, sotto il contenuto */
+    }
+
+    /* Animazione */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 0 0px 0 rgba(255, 0, 0, 0.7);
         }
-    </style>
+        50% {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px 12px rgba(255, 0, 0, 0.3);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 0 0px 0 rgba(255, 0, 0, 0);
+        }
+    }
+
+    
+    #game-container {
+        text-align: center;
+    }
+
+    #game-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background: darkgreen;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+</style>
 </head>
+
 <body>
-    <h1 id="quote">Caricando la frase del giorno...</h1>
+<canvas id="snow-canvas"></canvas>
+<!-- CALENDARIO -->
+<div id="calendar">
+    <div class="grid" id="dayContainer"></div>
+</div>
 
-    <p id="author"> Mimmina </p>
+<!-- PAGINA SORPRESA -->
+<div id="sorpresa">
+    <div id="sorpresa-box">
+        <h2 id="titolo-sorpresa"></h2>
+        <p id="testo-sorpresa"></p>
+        <div id="game-container">
+            <button id="game-button" onclick="window.location.href='../pages/whack-game-players.html'"> Inizia il gioco</a>
+        </div>
+        <button id="back">Torna al calendario</button>
+    </div>
+</div>
 
-        <script>
-            async function fetchDailyQuote() {
-                const FILE_DAY = 16;
-                const FILE_MONTH = 11;
-                const today = new Date();
-                const day = today.getDate();
-                const monthNumber = today.getMonth();
-                const month = today.toLocaleString('default', { month: 'short' });
-                const filename = month+'-quotes.json';
+<script>
 
-                if(day != FILE_DAY || monthNumber != FILE_MONTH){
-                    return {
-                        quote:"Non c'è niente per te qui oggi! Riprova nel giorno " + FILE_DAY + "/" + (FILE_MONTH+1),
-                        author:"Mimmina"
-                    }
-                }
-                
-                console.log("Retrieving quotes from ", filename)
-                const response = await fetch(filename);
-                const data = await response.json();
-                const quote = data[day - 1];
+const canvas = document.getElementById("snow-canvas");
+const ctx = canvas.getContext("2d");
 
-                if (quote) {
-                return quote;
-                }else {
-                console.error(`Citazione non trovata per il giorno $16 $11`);
-                return null;
-                }
-            }
-            // Funzione per recuperare la citazione dall'API
-            async function caricaFrase() {
-                try {
-                    const data = await fetchDailyQuote();
-                    if (data == null) throw new Error('Errore nel recupero della citazione');
-                    
-                
-                    document.getElementById('quote').textContent = data.quote;
-                    document.getElementById('author').textContent = data.author;
-                }catch (error) {
-                    console.error('Errore nel caricamento della citazione:', error);
-                    document.getElementById('quote').textContent = 'Impossibile caricare una citazione.';
-                }
-            }
+let width = canvas.width = window.innerWidth;
+let height = canvas.height = window.innerHeight;
 
-            caricaFrase();
-        </script>
+let flakes = [];
+
+// Crea fiocchi
+function createFlakes() {
+    for (let i = 0; i < 120; i++) {
+        flakes.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            r: Math.random() * 3 + 1,
+            d: Math.random() + 0.2
+        });
+    }
+}
+
+// Disegna fiocchi
+function drawFlakes() {
+    ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = "rgba(255, 255, 255, 0.9)";
+    ctx.beginPath();
+    for (let i = 0; i < flakes.length; i++) {
+        let f = flakes[i];
+        ctx.moveTo(f.x, f.y);
+        ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
+    }
+    ctx.fill();
+    moveFlakes();
+}
+
+// Muovi fiocchi
+let angle = 0;
+function moveFlakes() {
+    angle += 0.001;
+    for (let i = 0; i < flakes.length; i++) {
+        let f = flakes[i];
+        f.y += Math.pow(f.d, 2) + 1;
+        f.x += Math.sin(angle) * 0.8;
+
+        if (f.y > height) {
+            flakes[i] = {
+                x: Math.random() * width,
+                y: 0,
+                r: f.r,
+                d: f.d
+            };
+        }
+    }
+}
+
+function updateSnow() {
+    drawFlakes();
+    requestAnimationFrame(updateSnow);
+}
+
+// Adatta alla finestra
+window.addEventListener('resize', () => {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+});
+
+// Avvia
+createFlakes();
+updateSnow();
+
+/* --- CONFIGURAZIONE --- */
+// Inserisci qui le 25 sorprese
+const regaloAperto = "Mimmino ingordo hai già ricevuto\n questo regalino"
+
+// Per ciascun giorno puoi mettere l’immagine del bottone:
+const buttonImg = "../res/images/christmas";  
+// Cambialo con il percorso reale delle tue immagini
+
+
+/* --- GENERAZIONE CALENDARIO --- */
+
+const container = document.getElementById("dayContainer");
+// const oggi = new Date().getDate();  // giorno del mese
+const oggi = new Date().getDate();  // giorno del mese
+const mese = new Date().getMonth()+1;
+const unblockedDay = 16
+
+for (let i = 1; i <= 24; i++) {
+    const btn = document.createElement("button");
+    btn.className = "day-btn";
+    btn.style.backgroundImage = `url('${buttonImg}/${i}.png')`;
+
+    // comportamento clic
+    btn.onclick = () => apriSorpresa(i);
+
+    // disattiva giorni futuri
+    if (i > oggi) {
+        btn.style.opacity = "0.5";
+        btn.style.pointerEvents = "none";
+    }
+
+    if(i == unblockedDay && unblockedDay == oggi){
+        btn.style.opacity = "1";
+        btn.style.pointerEvents = "auto";
+        btn.classList.add("current-day")
+    }
+
+    container.appendChild(btn);
+}
+
+/* --- MOSTRA SORPRESA --- */
+
+function apriSorpresa(giorno) {
+    document.getElementById("calendar").style.display = "none";
+    document.getElementById("sorpresa").style.display = "flex";
+
+    if(giorno != oggi || oggi != unblockedDay) {
+        mostraErrore(giorno)
+    } else {
+        document.getElementById("titolo-sorpresa").style.display = "none";
+        document.getElementById("testo-sorpresa").style.display = "none";
+        document.getElementById("game-container").style.display = "block";
+    }
+}
+
+function mostraErrore(giorno){
+    document.getElementById("game-container").style.display = "none";
+    document.getElementById("titolo-sorpresa").style.display = "block";
+    document.getElementById("testo-sorpresa").style.display = "block";
+    document.getElementById("titolo-sorpresa").innerText = "🎁 Sorpresa del giorno " + giorno;
+    document.getElementById("testo-sorpresa").innerText = regaloAperto;
+}
+/* --- TORNA AL CALENDARIO --- */
+
+function tornaCalendario() {
+    document.getElementById("sorpresa").style.display = "none";
+    document.getElementById("calendar").style.display = "flex";
+}
+
+document.getElementById("back").onclick = tornaCalendario
+
+
+</script>
+
 </body>
 </html>

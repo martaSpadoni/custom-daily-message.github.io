@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Caccia al bomber</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background: url('../res/images/christmas/game-find.jpg') center center;
+        background-size: cover;
+        background-color: #d3c39a;
+        font-family: Arial, sans-serif;
+        position: relative;
+    }
+
+    #game-area {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .target-button {
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        transition: transform 0.2s;
+    }
+
+    .target-button:hover {
+        transform: scale(1.3);
+    }
+
+    .decoy {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        opacity: 0.85;
+        pointer-events: none; /* i disturbatori non sono cliccabili */
+    }
+
+    #hud {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background: rgba(255,255,255,0.9);
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        z-index: 2000;
+    }
+
+    #victory {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255,255,255,0.95);
+        padding: 40px;
+        border-radius: 20px;
+        font-size: 30px;
+        text-align: center;
+        z-index: 3000;
+    }
+
+    #back {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background: #c62828;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="hud">Giocatori trovati: <span id="found">0</span> / <span id="total">7</span></div>
+<div id="game-area"></div>
+
+<div id="victory">
+    🎉 Bravo amore! Li hai trovati tutti ❤️<br><br>
+    <button id="back" onclick="history.back()">Torna al calendario</button>
+</div>
+
+<script>
+/* -----------------------------------------------------------
+   CONFIGURAZIONE (puoi cambiare questi valori per modificare la difficoltà)
+----------------------------------------------------------- */
+
+// Numero di oggetti di disturbo
+const NUM_DECOYS = 200;
+
+// Dimensione massima di un oggetto di disturbo
+const DECOY_SIZE = 100;
+
+// Possibili immagini disturbatrici (cambiabili)
+const DECOY_IMAGES = [
+    "../res/images/christmas/games/caccia/bell.png", // fiocco
+    "../res/images/christmas/games/caccia/crown.png", // pallina
+    "../res/images/christmas/games/caccia/letter.png", // regalo
+    "../res/images/christmas/games/caccia/ribbon.png", // stella
+    "../res/images/christmas/games/caccia/sledge.png", // stella
+    "../res/images/christmas/games/caccia/star.png", // stella
+];
+
+const TREASURE_IMAGES = [
+    "../res/images/christmas/games/players/ludo.png",
+    "../res/images/christmas/games/players/piglia.png",
+    "../res/images/christmas/games/players/musumeci.png",
+    "../res/images/christmas/games/players/mirko.png",
+    "../res/images/christmas/games/players/ortolani.png",
+    "../res/images/christmas/games/players/piccinini.png",
+    "../res/images/christmas/games/players/sampaolesi.png",
+    "../res/images/christmas/games/players/brega.png",
+    "../res/images/christmas/games/players/cardinali.png",
+]
+
+// Numero di bottoni da trovare
+const NUM_BUTTONS = TREASURE_IMAGES.length;
+
+/* -----------------------------------------------------------
+   LOGICA DEL GIOCO
+----------------------------------------------------------- */
+
+const gameArea = document.getElementById("game-area");
+const foundText = document.getElementById("found");
+const totalText = document.getElementById("total");
+const victoryScreen = document.getElementById("victory");
+
+totalText.innerText = NUM_BUTTONS;
+let found = 0;
+
+// Funzione utilissima: genera una posizione casuale
+function randomPosition(size=40) {
+    const maxW = window.innerWidth - size;
+    const maxH = window.innerHeight - size;
+
+    return {
+        x: Math.random() * maxW,
+        y: Math.random() * maxH
+    };
+}
+
+// Genera i bottoni rossi
+function createButtons() {
+    for (let i = 0; i < NUM_BUTTONS; i++) {
+        const btn = document.createElement("div");
+        btn.classList.add("target-button");
+
+        btn.style.background = `url('${TREASURE_IMAGES[i]}') center/cover`
+
+        const pos = randomPosition(40);
+        btn.style.left = pos.x + "px";
+        btn.style.top = pos.y + "px";
+
+        btn.onclick = () => {
+            btn.style.display = "none";
+            found++;
+            foundText.innerText = found;
+            if (found === NUM_BUTTONS) {
+                victoryScreen.style.display = "block";
+            }
+        };
+
+        gameArea.appendChild(btn);
+    }
+}
+
+// Genera gli elementi disturbatori
+function createDecoys() {
+    for (let i = 0; i < NUM_DECOYS; i++) {
+        const d = document.createElement("img");
+        d.classList.add("decoy");
+
+        // scegli immagine casuale
+        const img = DECOY_IMAGES[Math.floor(Math.random() * DECOY_IMAGES.length)];
+        d.src = img;
+
+        // dimensione casuale fino al limite configurato
+        const size = 20 + Math.random() * DECOY_SIZE;
+        d.style.width = size + "px";
+        d.style.height = size + "px";
+
+        const pos = randomPosition(size);
+        d.style.left = pos.x + "px";
+        d.style.top = pos.y + "px";
+
+        gameArea.appendChild(d);
+    }
+}
+
+// Avvia il gioco
+createButtons();
+createDecoys();
+</script>
+
+</body>
+</html>

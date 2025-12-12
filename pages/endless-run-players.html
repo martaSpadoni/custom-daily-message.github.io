@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Endless Run – Mini Gioco</title>
+
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        background: url('../res/images/christmas/Christmas_20251125_113848_0000.png') no-repeat center top;
+        background-size: contain;
+        background-color: #d3c39a;
+        font-family: Arial, sans-serif;
+        touch-action: none;
+        user-select: none;
+    }
+
+    #start, #end {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background: darkred;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #end { display: none; }
+
+    #game {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* Player */
+    #player {
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+        transition: left 0.1s linear;
+    }
+
+    /* Oggetti cadenti */
+    .item {
+        position: absolute;
+        top: -80px;
+        width: 60px;
+        height: auto;
+        animation: fall linear forwards;
+    }
+
+    @keyframes fall {
+        from { transform: translateY(-80px); }
+        to   { transform: translateY(110vh); }
+    }
+
+    /* Indicatori */
+    #hud {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        z-index: 99;
+    }
+
+    #end-screen {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.85);
+        z-index: 100;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #end-message {
+        color: white;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="game">
+
+    <div id="hud">
+        ⭐ Bonus: <span id="bonus-count">0</span>/10<br>
+        💀 Malus: <span id="malus-count">0</span>/3
+    </div>
+
+    <img id="player" src="../res/images/christmas/games/caccia/mimmi.png">
+
+    <div id="end-screen">
+        <div id="end-message"></div>
+        <button id="start" onclick="startGame()">Start</button>
+        <button id="end" onclick="window.history.back()">Torna al calendario</button>
+    </div>
+</div>
+
+<script>
+/* -----------------------------------------
+    CONFIGURAZIONE GIOCO
+------------------------------------------*/
+
+// 🔥 Inserisci qui le tue immagini personalizzate!
+const PLAYER_IMAGE = "../res/images/christmas/games/caccia/mimmi.png";
+
+const BONUS_IMAGES = [
+    "../res/images/christmas/games/players/ludo.png",
+    "../res/images/christmas/games/players/piglia.png",
+    "../res/images/christmas/games/players/musumeci.png",
+    "../res/images/christmas/games/players/cardinali.png",
+];
+
+const MALUS_IMAGES = [
+    "../res/images/christmas/games/players/aquili.png",
+    "../res/images/christmas/games/players/mauro.png",
+    "../res/images/christmas/games/players/mister.png",
+    "../res/images/christmas/games/players/taddeo.png",
+];
+
+document.getElementById("player").src = PLAYER_IMAGE;
+
+
+// Difficoltà
+let FALL_SPEED = 3500;     // durata caduta in ms
+let SPAWN_INTERVAL = 900;  // intervallo spawn
+
+// Win/Lose
+const BONUS_WIN = 10;
+const MALUS_LOSE = 3;
+
+
+/* -----------------------------------------
+    VARIABILI
+------------------------------------------*/
+
+let gameRunning = false;
+let bonus = 0;
+let malus = 0;
+
+const game = document.getElementById("game");
+const player = document.getElementById("player");
+const bonusDisplay = document.getElementById("bonus-count");
+const malusDisplay = document.getElementById("malus-count");
+
+let playerX = window.innerWidth / 2;
+
+
+
+/* -----------------------------------------
+    MOVIMENTO PLAYER
+------------------------------------------*/
+
+game.addEventListener("touchstart", (e) => movePlayer(e.touches[0].clientX));
+game.addEventListener("touchmove", (e) => movePlayer(e.touches[0].clientX));
+
+function movePlayer(x) {
+    playerX = x;
+    player.style.left = (playerX - player.offsetWidth/2) + "px";
+}
+
+
+
+/* -----------------------------------------
+    GENERAZIONE OGGETTI
+------------------------------------------*/
+
+function spawnItem() {
+    if (!gameRunning) return;
+
+    const item = document.createElement("img");
+    item.classList.add("item");
+
+    const isBonus = Math.random() > 0.3;
+
+    item.dataset.type = isBonus ? "bonus" : "malus";
+    item.src = isBonus
+        ? BONUS_IMAGES[Math.floor(Math.random() * BONUS_IMAGES.length)]
+        : MALUS_IMAGES[Math.floor(Math.random() * MALUS_IMAGES.length)];
+
+    const x = Math.random() * (window.innerWidth - 60);
+    item.style.left = x + "px";
+    item.style.animationDuration = FALL_SPEED + "ms";
+
+    game.appendChild(item);
+
+    const fallTimer = setInterval(() => {
+        if (!gameRunning) {
+            clearInterval(fallTimer);
+            return;
+        }
+        checkCollision(item, fallTimer);
+    }, 40);
+}
+
+function startGame() {
+    bonus = 0;
+    malus = 0;
+    bonusDisplay.textContent = "0";
+    malusDisplay.textContent = "0";
+
+    document.getElementById("end-screen").style.display = "none";
+
+    gameRunning = true;
+
+    setInterval(spawnItem, SPAWN_INTERVAL);
+}
+
+
+
+/* -----------------------------------------
+    COLLISIONI
+------------------------------------------*/
+
+function checkCollision(item, timer) {
+    const rectPlayer = player.getBoundingClientRect();
+    const rectItem = item.getBoundingClientRect();
+
+    if (rectItem.top > window.innerHeight) {
+        item.remove();
+        clearInterval(timer);
+        return;
+    }
+
+    const collide =
+        rectItem.bottom > rectPlayer.top &&
+        rectItem.top < rectPlayer.bottom &&
+        rectItem.right > rectPlayer.left &&
+        rectItem.left < rectPlayer.right;
+
+    if (collide) {
+        const type = item.dataset.type;
+
+        if (type === "bonus") {
+            bonus++;
+            bonusDisplay.textContent = bonus;
+        } else {
+            malus++;
+            malusDisplay.textContent = malus;
+        }
+
+        item.remove();
+        clearInterval(timer);
+
+        checkEnd();
+    }
+}
+
+
+
+/* -----------------------------------------
+    FINE PARTITA
+------------------------------------------*/
+
+function checkEnd() {
+    if (bonus >= BONUS_WIN) {
+        endGame("🎉 Hai vinto! Hai raccolto 10 bonus!");
+    } else if (malus >= MALUS_LOSE) {
+        endGame("💀 Hai perso! Hai preso troppi malus!");
+    }
+}
+
+function endGame(message) {
+    gameRunning = false;
+    document.getElementById("end-message").textContent = message;
+    document.getElementById("end-screen").style.display = "flex";
+    document.getElementById("end").style.display = "block";
+    document.getElementById("start").style.display = "none";
+}
+</script>
+
+</body>
+</html>
