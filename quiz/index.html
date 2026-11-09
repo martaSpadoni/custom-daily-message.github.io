@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg bg-a active"></div>
+    <div class="bg bg-b"></div>
+    <div class="bg-overlay"></div>
+    <div class="floaters" aria-hidden="true"></div>
+
+    <main id="app">
+        <!-- Intro -->
+        <section id="screen-start" class="card screen active">
+            <div class="emoji-hero">🎁</div>
+            <h1 id="quiz-title"></h1>
+            <p id="quiz-subtitle" class="subtitle"></p>
+            <button id="start-btn" class="btn-primary"></button>
+        </section>
+
+        <!-- Domanda -->
+        <section id="screen-question" class="screen">
+            <div class="progress-wrap">
+                <div class="progress-bar"><div id="progress-fill"></div></div>
+                <span id="progress-text"></span>
+            </div>
+            <div class="card question-card">
+                <h2 id="question-text"></h2>
+                <div class="options">
+                    <button class="option option-a" data-option="A"><span class="badge">A</span><span class="label"></span></button>
+                    <button class="option option-b" data-option="B"><span class="badge">B</span><span class="label"></span></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risultato -->
+        <section id="screen-result" class="card screen">
+            <p class="result-kicker">Il tuo regalo è...</p>
+            <div class="gift-box" id="gift-box">
+                <div class="gift-lid"></div>
+                <div class="gift-body"></div>
+                <img id="gift-image" alt="Regalo">
+            </div>
+            <h2 id="gift-title"></h2>
+            <p id="gift-message" class="subtitle"></p>
+        </section>
+    </main>
+
+    <canvas id="confetti"></canvas>
+
+    <script src="config.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
